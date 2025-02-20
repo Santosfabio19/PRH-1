@@ -7,16 +7,17 @@ Created on Tue Aug 27 18:02:24 2024
 """
 
 import win32com.client as winclt
-from setup_gc_eos import pinit
+from setup_gc_eos import gc_eos_class
+from eos_database_new_resumed import *
 
 from species_builder import R, Species, Mixture
-from transfer_phenone_parameters import viscosity
-from hydrate_module import *
+#from transfer_phenone_parameters import viscosity
+#from hydrate_module import *
 
 unisim = winclt.Dispatch("UnisimDesign.Application")
 
 # Abrindo o arquivo de simulação
-file_path = r"C:\Users\rodri\Downloads\hisep_only_flash_get_data2.usc"
+file_path = r"C:\Users\fabio\Documents\GitHub\PRH-1\unisimtable\nwe_sub_separtion_isolated - change_composition.usc"
 Case = unisim.SimulationCases.Open(file_path)
 
 
@@ -55,14 +56,14 @@ T = [i for i in range(40,131,3)]
 
 pvt_table = []
 
-feed_pressure = getattr(material_streams['feed'],'Pressure')
-feed_temperature = getattr(material_streams['feed'],'Temperature')
+#feed_pressure = getattr(material_streams['feed'],'Pressure')
+#feed_temperature = getattr(material_streams['feed'],'Temperature')
 
 vapor_feed_pressure = getattr(material_streams['vapor_feed'],'Pressure')
 vapor_feed_temperature = getattr(material_streams['vapor_feed'],'Temperature')
 
-feed_pressure.SetValue(10000)
-feed_temperature.SetValue(100)
+#feed_pressure.SetValue(10000)
+#feed_temperature.SetValue(100)
 
 vapor_feed_pressure.SetValue(10000)
 vapor_feed_temperature.SetValue(100)
@@ -80,27 +81,44 @@ for Pin in P:
         mass_flow_liq = material_streams['down'].MassFlow()
         
         
+        if mass_flow_vap > 0:
+            vap = pinit.copy_change_x_and_conditions(Tin+273.15,Pin*100,None,material_streams['top'].ComponentMolarFraction(),'gas')
+            drogdp = vap.drhodP/1000
+            drogdt = vap.drhodT
+            vap.evaluate_der_rho()
+            viscosity_vap = material_streams['top'].Viscosity()*0.001
+            cp_vap = material_streams['top'].MassHeatCapacityValue*material_streams['top'].CpCv()*1000
+            rho_vap = material_streams['top'].MassDensity()
+            vap_k = material_streams['top'].ThermalConductivity()
+            vap_enthalpy = material_streams['top'].MassEnthalpyValue*1000-vap_enthalpy_ref
+            ################################################
+            drohldp = 0
+            drohldt = 0
+            viscosity_liq = 0
+            cp_liq = 0
+            rho_liq = 0
+            liq_k = 0
+            liq_enthalpy = 0
+            
         
-        vap = pinit.copy_change_x_and_conditions(Tin+273.15,Pin*100,None,material_streams['top'].ComponentMolarFraction(),'gas')
-        drogdp = vap.drhodP/1000
-        drogdt = vap.drhodT
-        vap.evaluate_der_rho()
-        viscosity_vap = material_streams['top'].Viscosity()*0.001
-        cp_vap = material_streams['top'].MassHeatCapacityValue*material_streams['top'].CpCv()*1000
-        rho_vap = material_streams['top'].MassDensity()
-        vap_k = material_streams['top'].ThermalConductivity()
-        vap_enthalpy = material_streams['top'].MassEnthalpyValue*1000-vap_enthalpy_ref
-        
-        
-        liq = pinit.copy_change_x_and_conditions(Tin+273.15,Pin*100,None,material_streams['down'].ComponentMolarFraction(),'liquid')
-        drohldp = liq.drhodP/1000
-        drohldt = liq.drhodT
-        liq.evaluate_der_rho()
-        viscosity_liq = material_streams['down'].Viscosity()*0.001
-        cp_liq = material_streams['down'].MassHeatCapacityValue*material_streams['down'].CpCv()*1000
-        rho_liq = material_streams['down'].MassDensity()
-        liq_k = material_streams['down'].ThermalConductivity()
-        liq_enthalpy = material_streams['down'].MassEnthalpyValue*1000-liq_enthalpy_ref
+        elif mass_flow_ > 0:
+            liq = pinit.copy_change_x_and_conditions(Tin+273.15,Pin*100,None,material_streams['down'].ComponentMolarFraction(),'liquid')
+            drohldp = liq.drhodP/1000
+            drohldt = liq.drhodT
+            liq.evaluate_der_rho()
+            viscosity_liq = material_streams['down'].Viscosity()*0.001
+            cp_liq = material_streams['down'].MassHeatCapacityValue*material_streams['down'].CpCv()*1000
+            rho_liq = material_streams['down'].MassDensity()
+            liq_k = material_streams['down'].ThermalConductivity()
+            liq_enthalpy = material_streams['down'].MassEnthalpyValue*1000-liq_enthalpy_ref
+            ###############################
+            drogdp = 0
+            drogdt = 0
+            viscosity_vap = 0
+            cp_vap = 0
+            rho_vap = 0
+            vap_k = 0
+            vap_enthalpy = 0
         
         
         surface_tension = 0.001*main_pfd.Operations.Item('Varificacao_K').Cell('B2').CellValue
