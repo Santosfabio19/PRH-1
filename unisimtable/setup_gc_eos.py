@@ -504,3 +504,15 @@ class gc_eos_class:
 
         return exp(ln_phi)
     
+    def evaluate_drhodP(self):
+        self.evaluate_der_rho()
+        return self.drhodP  
+    
+    
+    
+    
+    def evaluate_drhodT(self):
+        self.evaluate_der_rho()
+        return self.drhodT
+        
+    
