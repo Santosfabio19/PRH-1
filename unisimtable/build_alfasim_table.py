@@ -60,8 +60,8 @@ for op in main_pfd.Operations:
 # COLUMNS = (PT, TM, ROG, ROHL, DROGDP, DROHLDP, DROGDT, DROHLDT, RS, VISG, VISHL, CPG, CPHL, HG, HHL, TCG, TCHL, SIGGHL)
 
 
-P = [i for i in range(120,801,50)]   # 120,801,5
-T = [i for i in range(40,131,30)]    # 40,131, 3 
+P = [i for i in range(120,801,5)]   # 120,801,5
+T = [i for i in range(40,131,3)]    # 40,131, 3 
 
 pvt_table = []
 
@@ -162,7 +162,7 @@ for PT in P:
             CPHL = material_streams['vapor_liquid'].MassHeatCapacityValue*material_streams['vapor_liquid'].CpCv()*1000
             ROHL = material_streams['vapor_liquid'].MassDensity()
             TCHL = material_streams['vapor_liquid'].ThermalConductivity()
-            HHL = (material_streams['vapor_liquid'].MassEnthalpyValue*1000-liq_enthalpy_ref) * 
+            HHL = (material_streams['vapor_liquid'].MassEnthalpyValue*1000-liq_enthalpy_ref) 
             SIGGHL = material_streams["vapor_liquid"].SurfaceTension()
             SEHL = 100.0
             
@@ -190,24 +190,97 @@ for PT in P:
         
 
 
+# %%
+
 
 path_saida = r'C:\Users\fabio\projects\PRH-1\unisimtable\tabelas\pvt_table2.csv'
 
 with open(path_saida, mode='w', newline='') as file:
     # Escrever o cabeçalho
-    file.write("PT;TM;ROG;ROHL;DROGDP;DROHLDP;DROGDT;DROHLDT;RS;VISG;VISHL;CPG;CPHL;HG;HHL;TCG;TCHL;SIGGHL;SEG;SEHL\n")
+     # Escrever o cabeçalho
+    columns = ["PT", "TM", "ROG", "ROHL", "DROGDP", "DROHLDP", "DROGDT", "DROHLDT", "RS", "VISG", "VISHL", "CPG", "CPHL", "HG", "HHL", "TCG", "TCHL", "SIGGHL", "SEG", "SEHL"]
+    COLUMNS_row = "COLUMNS = (" + ",".join(columns) + ")\n"
 
     
     # Escrever as linhas de dados no formato desejado
-    COMPONENT_row = "COMPONENTS =  (" + ",".join(list_names) + "),\\"
-    
+    COMPONENT_row = "COMPONENTS = (" + ",".join(f'"{component}"' for component in list_names) + "),\\"    
     MOLES_row = "MOLES = (" + ",".join(map(str, nwe_3)) + "),\\"
+    MOL = critical_table[12,:]
+    MOLWEIGHT_row = "MOLWEIGHT = (" + ",".join(map(str, MOL)) + ") g/mol,\\"
+    DENSITY = [1,2,3,45,6,]
+    DENSITY_row = "DENSITY = (" + ",".join(map(str, DENSITY)) + ") g/cm3,\\"
+    
+    
+    
+    STDTEMPERATURE = 0.288710e+03  # K
+    STDTEMPERATURE_row = f"STDTEMPERATURE = ({STDTEMPERATURE}) K,\\"
+    GOR = 0.444  # Sm3/Sm3
+    GOR_row = f"GOR = ({GOR}) Sm3/Sm3,\\"
+    GLR = 0.44444e+03  # Sm3/Sm3
+    GLR_row = f"GLR = ({GLR}) Sm3/Sm3,\\"
+    
+    STDGASDENSITY = vap.rho  # kg/m3
+    
+    STDGASDENSITY_row = f"STDGASDENSITY = ({STDGASDENSITY}) kg/m3,\\"
+ 
+    STDOILDENSITY = liq.rho  # kg/m3
+    
+    STDOILDENSITY_row = f"STDOILDENSITY = ({STDOILDENSITY}) kg/m3,\\"
+    
+    CRITICALPRESSURE = 0.44444444444e+03  # ATM
+    CRITICALPRESSURE_row = f"CRITICALPRESSURE = ({CRITICALPRESSURE}) ATM,\\"
+    
+    CRITICALTEMPERATURE = 0.444444444444444e+03  # 
+    CRITICALTEMPERATURE_row = f"CRITICALTEMPERATURE = ({CRITICALTEMPERATURE}) K,\\"
+    
+    MESHTYPE = "STANDARD"
+    MESHTYPE_row = f"MESHTYPE = {MESHTYPE},\\"
+    
+    STDPRESSURE = 1.4444444444e+01  # ATM
+    STDPRESSURE_row = f"STDPRESSURE = ({STDPRESSURE}) ATM,\\"
+    PRESSURE_row = "PRESSURE = (" + ",".join(map(str, P)) + ") Pa,\\"
+    TEMPERATURE_row = "TEMPERATURE = (" + ",".join(map(str, T)) + ") C,\\"
+    BUBBLEPRESSURES = [1,2,34,5,]
+    BUBBLEPRESSURES_row = "BUBBLEPRESSURES = (" + ",".join(map(str, BUBBLEPRESSURES)) + ") Pa,\\"
+    BUBBLETEMPERATURES = [23421,124,124,214,21,421,4,21,]
+    BUBBLETEMPERATURES_row = "BUBBLETEMPERATURES= (" + ",".join(map(str, BUBBLETEMPERATURES)) + ") C,\\"
+        
+    
+    
+    
+    
+    
+    PRESSURE_row = "PRESSURE = (" + ",".join(map(str, P)) + ") Pa,\\"
+    TEMPERATURE_row = "TEMPERATURE = (" + ",".join(map(str, T)) + ") C,\\"
+    
+    
+    
+    
+    
+    
     
     
     
     file.write(COMPONENT_row + "\n")
     file.write(MOLES_row + '\n')
-
+    file.write(MOLWEIGHT_row + '\n')
+    file.write(DENSITY_row + '\n')
+    file.write(STDPRESSURE_row + '\n')
+    file.write(STDTEMPERATURE_row + '\n')
+    file.write(GOR_row + '\n')
+    file.write(GLR_row + '\n')
+    file.write(STDGASDENSITY_row + '\n')
+    file.write(STDOILDENSITY_row + '\n')
+    file.write(CRITICALPRESSURE_row + '\n')
+    file.write(CRITICALTEMPERATURE_row + '\n')
+    file.write(MESHTYPE_row + '\n')
+    file.write(STDPRESSURE_row + '\n')
+    file.write(PRESSURE_row + '\n')
+    file.write(TEMPERATURE_row + '\n')
+    file.write(BUBBLEPRESSURES_row + "\n")
+    file.write(BUBBLETEMPERATURES_row + "\n")
+    
+    file.write(COLUMNS_row)
     
     for row in pvt_table:
         try:
