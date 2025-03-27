@@ -83,8 +83,11 @@ for op in main_pfd.Operations:
 # COLUMNS = (PT, TM, ROG, ROHL, DROGDP, DROHLDP, DROGDT, DROHLDT, RS, VISG, VISHL, CPG, CPHL, HG, HHL, TCG, TCHL, SIGGHL)
 
 
-P = [i for i in range(120,801,50)]   # 120,801,5
-T = [i for i in range(40,131,30)]    # 40,131, 3 
+P = [i for i in range(120,805,3)]   # 120,801,5    # 22 
+T = [i for i in range(40,135,3)]    # 40,131, 3  # 12 
+print(len(T))
+print(len(P))
+
 
 pvt_table = []
 
@@ -151,8 +154,8 @@ for PT in P:
             
             
             vap = pinit.copy_change_x_and_conditions(TM+273.15,PT*100,None,comp,'gas')
-            a = vap.mass_rho
-            DENSITY.append(a)
+            #a = vap.mass_rho
+            #DENSITY.append(a)
             print("Apenas Vapor")
             
             solver_vap = solver_eos(vap_input)
@@ -166,21 +169,21 @@ for PT in P:
             DROGDT = vap.evaluate_drhodT()
             vap.evaluate_der_rho()
             CPG = material_streams['vapor_vapor'].MassHeatCapacityValue*material_streams['vapor_vapor'].CpCv()*1000
-            ROG = material_streams['vapor_vapor'].MassDensity()
+            ROG = material_streams['vapor_vapor'].MassDensityValue
             VISG = material_streams['vapor_vapor'].Viscosity() * 10e-3 
             TCG = material_streams['vapor_vapor'].ThermalConductivity()
-            HG = material_streams['vapor_vapor'].MassEnthalpyValue*1000-vap_enthalpy_ref
+            HG = material_streams['vapor_vapor'].MassEnthalpyValue/1000-vap_enthalpy_ref
             SEG = 100
             ################################################
-            DROHLDP = 0
-            DROHLDT = 0
-            VISHL = 0
-            CPHL = 0
-            ROHL = 0
-            TCHL = 0
-            HHL = 0
-            SIGGHL = 0
-            SEHL = 0 
+            DROHLDP = vap.evaluate_drhodP()/1000
+            DROHLDT = vap.evaluate_drhodT()
+            VISHL = material_streams['vapor_vapor'].Viscosity() * 10e-3 
+            CPHL = material_streams['vapor_vapor'].MassHeatCapacityValue*material_streams['vapor_vapor'].CpCv()*1000
+            ROHL = material_streams['vapor_vapor'].MassDensityValue
+            TCHL = material_streams['vapor_vapor'].ThermalConductivity()
+            HHL = material_streams['vapor_vapor'].MassEnthalpyValue*1000-vap_enthalpy_ref
+            SIGGHL = 0.
+            SEHL = 100 
             vapor_ += 1 
             
         
@@ -190,7 +193,7 @@ for PT in P:
             
             
             liq = pinit.copy_change_x_and_conditions(TM+273.15,PT*100,None,comp,'liquid')
-            DENSITY.append(liq.mass_rho)
+            #DENSITY.append(liq.mass_rho)
             ComMolFrac = material_streams['vapor_liquid'].ComponentMolarFraction()
             DROHLDP = liq.evaluate_drhodP()/1000
             print("Apenas Liquido")
@@ -205,26 +208,27 @@ for PT in P:
             
             DROHLDT = liq.evaluate_drhodT()
             liq.evaluate_der_rho()
-            VISHL = material_streams['vapor_liquid'].Viscosity()*0.001
+            VISHL = material_streams['vapor_liquid'].Viscosity()* 10e-3 
             CPHL = material_streams['vapor_liquid'].MassHeatCapacityValue*material_streams['vapor_liquid'].CpCv()*1000
-            ROHL = material_streams['vapor_liquid'].MassDensity()
+            ROHL = material_streams['vapor_liquid'].MassDensityValue
             TCHL = material_streams['vapor_liquid'].ThermalConductivity()
             HHL = material_streams['vapor_liquid'].MassEnthalpyValue*1000-liq_enthalpy_ref
             SIGGHL = material_streams["vapor_liquid"].SurfaceTension()
             SEHL = 100
             ############
-            DROGDP = 0
-            DROGDT = 0
+            DROGDP = vap.evaluate_drhodP()/1000
+            DROGDT = vap.evaluate_drhodT()
             vap.evaluate_der_rho()
-            VISG = 0
-            CPG = 0
-            ROG = 0
-            TCG = 0
-            HG = 0 
-            SEG  = 0  
-            liquid_ += 1
-            
+            VISG = material_streams['vapor_liquid'].Viscosity()*10e-2
+            CPG = material_streams['vapor_liquid'].MassHeatCapacityValue*material_streams['vapor_vapor'].CpCv()*1000
+            ROG = material_streams['vapor_liquid'].MassDensity()
+            TCG = material_streams['vapor_liquid'].ThermalConductivity()
+            HG = material_streams['vapor_liquid'].MassEnthalpyValue*1000-liq_enthalpy_ref
+            SEG = 100.0
+            liquid_ += 1 
         else:
+            reorder_obj = Reorder(list_names_unisim, list(comp))
+            _, comp = reorder_obj.reorder()
             vap = pinit.copy_change_x_and_conditions(TM+273.15,PT*100,None,comp,'gas')
             DENSITY.append(vap.mass_rho)
             
@@ -233,21 +237,21 @@ for PT in P:
             print("Vapor e Liquido")
             DROGDT = vap.evaluate_drhodT()
             vap.evaluate_der_rho()
-            VISG = material_streams['vapor_vapor'].Viscosity()*10e-3
+            VISG = material_streams['vapor_vapor'].Viscosity()*10e-2
             CPG = material_streams['vapor_vapor'].MassHeatCapacityValue*material_streams['vapor_vapor'].CpCv()*1000
             ROG = material_streams['vapor_vapor'].MassDensity()
             TCG = material_streams['vapor_vapor'].ThermalConductivity()
             HG = material_streams['vapor_vapor'].MassEnthalpyValue*1000-vap_enthalpy_ref
             SEG = 100.0
             
-            liq = pinit.copy_change_x_and_conditions(TM+273.15,PT*100,None,material_streams['vapor_liquid'].ComponentMolarFraction(),'liquid')
+            liq = pinit.copy_change_x_and_conditions(TM+273.15,PT*100,None,comp,'liquid')
             
             DROHLDP = liq.evaluate_drhodP()/1000
             DROHLDT = liq.evaluate_drhodT()
             liq.evaluate_der_rho()
-            VISHL = material_streams['vapor_liquid'].Viscosity()*0.001
+            VISHL = material_streams['vapor_liquid'].Viscosity()* 10e-3 
             CPHL = material_streams['vapor_liquid'].MassHeatCapacityValue*material_streams['vapor_liquid'].CpCv()*1000
-            ROHL = material_streams['vapor_liquid'].MassDensity()
+            ROHL = material_streams['vapor_liquid'].MassDensityValue  # Pode ser densidade molar
             TCHL = material_streams['vapor_liquid'].ThermalConductivity()
             HHL = (material_streams['vapor_liquid'].MassEnthalpyValue*1000-liq_enthalpy_ref) 
             SIGGHL = material_streams["vapor_liquid"].SurfaceTension()
@@ -280,7 +284,7 @@ for PT in P:
 # %%
 
 
-path_saida = r'C:\Users\fabio\projects\PRH-1\unisimtable\tabelas\pvt_table3.csv'
+path_saida = r'C:\Users\fabio\projects\PRH-1\unisimtable\tabelas\pvt_table_32x228.tab'
 
 with open(path_saida, mode='w', newline='') as file:
     # Escrever o cabeçalho
@@ -299,32 +303,32 @@ with open(path_saida, mode='w', newline='') as file:
     
     
     STDTEMPERATURE = 0.288710e+03  # K
-    STDTEMPERATURE_row = f"STDTEMPERATURE = ({STDTEMPERATURE}) K,\\"
-    GOR = 0.444  # Sm3/Sm3
-    GOR_row = f"GOR = ({GOR}) Sm3/Sm3,\\"
-    GLR = 0.44444e+03  # Sm3/Sm3
-    GLR_row = f"GLR = ({GLR}) Sm3/Sm3,\\"
+    STDTEMPERATURE_row = f"STDTEMPERATURE = {STDTEMPERATURE} K,\\"
+    GOR = .382991E+03  # Sm3/Sm3
+    GOR_row = f"GOR = {GOR} Sm3/Sm3,\\"
+    GLR = .382991E+03  # Sm3/Sm3
+    GLR_row = f"GLR = {GLR} Sm3/Sm3,\\"
     
     STDGASDENSITY = vap.rho  # kg/m3
     
-    STDGASDENSITY_row = f"STDGASDENSITY = ({STDGASDENSITY}) kg/m3,\\"
+    STDGASDENSITY_row = f"STDGASDENSITY = {STDGASDENSITY} kg/m3,\\"
  
     STDOILDENSITY = liq.rho  # kg/m3
     
-    STDOILDENSITY_row = f"STDOILDENSITY = ({STDOILDENSITY}) kg/m3,\\"
+    STDOILDENSITY_row = f"STDOILDENSITY = {STDOILDENSITY} kg/m3,\\"
     
-    CRITICALPRESSURE = 0.44444444444e+03  # ATM
-    CRITICALPRESSURE_row = f"CRITICALPRESSURE = ({CRITICALPRESSURE}) ATM,\\"
+    CRITICALPRESSURE = .100000E+01  # ATM
+    CRITICALPRESSURE_row = f"CRITICALPRESSURE = {CRITICALPRESSURE} ATM,\\"
     
-    CRITICALTEMPERATURE = 0.444444444444444e+03  # 
-    CRITICALTEMPERATURE_row = f"CRITICALTEMPERATURE = ({CRITICALTEMPERATURE}) K,\\"
+    CRITICALTEMPERATURE = .288710E+03  # 
+    CRITICALTEMPERATURE_row = f"CRITICALTEMPERATURE = {CRITICALTEMPERATURE} K,\\"
     
     MESHTYPE = "STANDARD"
     MESHTYPE_row = f"MESHTYPE = {MESHTYPE},\\"
     
     STDPRESSURE = 1.4444444444e+01  # ATM
-    STDPRESSURE_row = f"STDPRESSURE = ({STDPRESSURE}) ATM,\\"
-    PRESSURE_row = "PRESSURE = (" + ",".join(map(str, P)) + ") Pa,\\"
+    STDPRESSURE_row = f"STDPRESSURE = {STDPRESSURE} ATM,\\"
+    PRESSURE_row = "PRESSURE = (" + ",".join(map(str, P)) + ") Bar,\\"
     TEMPERATURE_row = "TEMPERATURE = (" + ",".join(map(str, T)) + ") C,\\"
     #BUBBLEPRESSURES = T
     BUBBLEPRESSURES_row = "BUBBLEPRESSURES = (" + ",".join(map(str, Pbub)) + ") Pa,\\"
@@ -345,22 +349,21 @@ with open(path_saida, mode='w', newline='') as file:
     
     
     
-    
-    
+    file.write('PVTTABLE LABEL = "NONEQ TABSAT5", PHASE = TWO,\\ \n')    
     file.write(COMPONENT_row + "\n")
-    file.write(MOLES_row + '\n')
-    file.write(MOLWEIGHT_row + '\n')
-    file.write(DENSITY_row + '\n')
+    #file.write(MOLES_row + '\n')
+    #file.write(MOLWEIGHT_row + '\n')
+    #file.write(DENSITY_row + '\n')
     file.write(STDPRESSURE_row + '\n')
     file.write(STDTEMPERATURE_row + '\n')
-    file.write(GOR_row + '\n')
-    file.write(GLR_row + '\n')
-    file.write(STDGASDENSITY_row + '\n')
-    file.write(STDOILDENSITY_row + '\n')
-    file.write(CRITICALPRESSURE_row + '\n')
-    file.write(CRITICALTEMPERATURE_row + '\n')
+    #file.write(GOR_row + '\n')
+    #file.write(GLR_row + '\n')
+    #file.write(STDGASDENSITY_row + '\n')
+    #file.write(STDOILDENSITY_row + '\n')
+    #file.write(CRITICALPRESSURE_row + '\n')
+    #file.write(CRITICALTEMPERATURE_row + '\n')
     file.write(MESHTYPE_row + '\n')
-    file.write(STDPRESSURE_row + '\n')
+    #file.write(STDPRESSURE_row + '\n')
     file.write(PRESSURE_row + '\n')
     file.write(TEMPERATURE_row + '\n')
     file.write(BUBBLEPRESSURES_row + "\n")
@@ -379,24 +382,7 @@ with open(path_saida, mode='w', newline='') as file:
 
 print(f'Tabela salva em {path_saida}')
         
-# %%
 
-
-import dataiku
-import pandas as pd, numpy as np
-from dataiku import pandasutils as pdu
-
-# Read recipe inputs
-comma_separated_file = dataiku.Dataset("comma_separated_file")
-df = comma_separated_file.get_dataframe()
-
-# the name of the tab file
-file_name = 'tab_separated_file.tsv'
-
-# Write recipe outputs
-output_folder = dataiku.Folder("output_folder")
-with output_folder.get_writer(f"/{file_name}") as writer:
-    writer.write(df.to_csv(sep='\t', encoding='utf-8', index=False).encode("utf-8"))
         
         
 
