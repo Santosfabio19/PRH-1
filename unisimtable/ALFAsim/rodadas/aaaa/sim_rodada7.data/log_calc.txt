@@ -1,0 +1,5569 @@
+#######################################################
+################### TRANSIENT SOLVER ######################
+#######################################################
+Number of nonzero elements in matrix is 580
+    Testing coloring type is sl with total number of colors equal to 24, weight type lexical and coloring state is VALID
+    Testing coloring type is sl with total number of colors equal to 24, weight type lf and coloring state is VALID
+    Testing coloring type is sl with total number of colors equal to 24, weight type sl and coloring state is VALID
+    Testing coloring type is id with total number of colors equal to 24, weight type lexical and coloring state is VALID
+    Testing coloring type is id with total number of colors equal to 24, weight type lf and coloring state is VALID
+    Testing coloring type is id with total number of colors equal to 24, weight type sl and coloring state is VALID
+    Testing coloring type is lf with total number of colors equal to 24, weight type lexical and coloring state is VALID
+    Testing coloring type is lf with total number of colors equal to 24, weight type lf and coloring state is VALID
+    Testing coloring type is lf with total number of colors equal to 24, weight type sl and coloring state is VALID
+    Testing coloring type is greedy with total number of colors equal to 24, weight type lexical and coloring state is VALID
+    Testing coloring type is greedy with total number of colors equal to 24, weight type lf and coloring state is VALID
+    Testing coloring type is greedy with total number of colors equal to 24, weight type sl and coloring state is VALID
+    Testing coloring type is jp with total number of colors equal to 24, weight type lexical and coloring state is VALID
+    Testing coloring type is jp with total number of colors equal to 24, weight type lf and coloring state is VALID
+    Testing coloring type is jp with total number of colors equal to 24, weight type sl and coloring state is VALID
+Selected coloring type is sl with total number of colors equal to 24, weight type lexical and took 0.005184 seconds.
+
+######################### NEW TIME-STEP ##########################
+index: 0
+delta_t: 0.001
+time: 0 s (0:00:00)
+
+
+Got NaN values on output for mixture enthalpy. Forcing 0.
+  0 Residual function norm 0.4455376
+    0 Residual function norm 0.4455376
+  1 Residual function norm 0.0089050487
+  2 Residual function norm 3.9860636e-08
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -2.32298888e-12 kg
+
+######################### NEW TIME-STEP ##########################
+index: 1
+delta_t: 0.002
+time: 0.001 s (0:00:00.001000)
+
+
+  0 Residual function norm 0.45017252
+    0 Residual function norm 0.45017252
+    1 Residual function norm 0.24784485
+  1 Residual function norm 4.7227647e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -2.03936067e-12 kg
+
+######################### NEW TIME-STEP ##########################
+index: 2
+delta_t: 0.004
+time: 0.003 s (0:00:00.003000)
+
+
+  0 Residual function norm 0.45017962
+    0 Residual function norm 0.45017962
+    1 Residual function norm 0.22520588
+  1 Residual function norm 1.125347e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -3.93477671e-10 kg
+
+######################### NEW TIME-STEP ##########################
+index: 3
+delta_t: 0.008
+time: 0.007 s (0:00:00.007000)
+
+
+  0 Residual function norm 0.45021577
+    0 Residual function norm 0.45021577
+    1 Residual function norm 0.22517724
+  1 Residual function norm 2.4394198e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -8.75002705e-09 kg
+
+######################### NEW TIME-STEP ##########################
+index: 4
+delta_t: 0.016
+time: 0.015 s (0:00:00.015000)
+
+
+  0 Residual function norm 0.45006647
+    0 Residual function norm 0.45006647
+    1 Residual function norm 0.2248783
+    2 Residual function norm 0.10527567
+    3 Residual function norm 0.033627317
+    4 Residual function norm 0.0047292561
+    5 Residual function norm 0.000236136
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.01604854e-05 kg
+
+######################### NEW TIME-STEP ##########################
+index: 5
+delta_t: 0.032
+time: 0.031 s (0:00:00.031000)
+
+
+  0 Residual function norm 0.44949997
+    0 Residual function norm 0.44949997
+    1 Residual function norm 0.33675624
+  1 Residual function norm 4.4104583e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 5.87428743e-06 kg
+
+######################### NEW TIME-STEP ##########################
+index: 6
+delta_t: 0.064
+time: 0.063 s (0:00:00.063000)
+
+
+  0 Residual function norm 0.44766407
+    0 Residual function norm 0.44766407
+    1 Residual function norm 0.22192387
+    2 Residual function norm 0.10801063
+    3 Residual function norm 0.033882134
+    4 Residual function norm 0.0043830503
+    5 Residual function norm 0.00021972373
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.26222203e-04 kg
+
+######################### NEW TIME-STEP ##########################
+index: 7
+delta_t: 0.128
+time: 0.127 s (0:00:00.127000)
+
+
+  0 Residual function norm 0.44197452
+    0 Residual function norm 0.44197452
+    1 Residual function norm 0.32771041
+  1 Residual function norm 0.00017884405
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -8.67147156e-04 kg
+
+######################### NEW TIME-STEP ##########################
+index: 8
+delta_t: 0.256
+time: 0.255 s (0:00:00.255000)
+
+
+  0 Residual function norm 0.42578438
+    0 Residual function norm 0.42578438
+    1 Residual function norm 0.19829776
+    2 Residual function norm 0.084665424
+    3 Residual function norm 0.024771805
+    4 Residual function norm 0.0021014027
+    5 Residual function norm 9.8832369e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -2.69248685e-03 kg
+
+######################### NEW TIME-STEP ##########################
+index: 9
+delta_t: 0.512
+time: 0.511 s (0:00:00.511000)
+
+
+  0 Residual function norm 0.38957434
+    0 Residual function norm 0.38957434
+    1 Residual function norm 0.27347183
+  1 Residual function norm 0.0013688112
+  2 Residual function norm 5.6575645e-08
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -2.69744652e-03 kg
+
+######################### NEW TIME-STEP ##########################
+index: 10
+delta_t: 1.024
+time: 1.023 s (0:00:01.023000)
+
+
+  0 Residual function norm 0.33221937
+    0 Residual function norm 0.33221937
+    1 Residual function norm 0.14289924
+    2 Residual function norm 0.026344827
+    3 Residual function norm 0.0050700081
+    4 Residual function norm 0.0022531676
+    5 Residual function norm 0.0015621104
+  1 Residual function norm 2.8842783e-09
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -2.69767475e-03 kg
+
+######################### NEW TIME-STEP ##########################
+index: 11
+delta_t: 2.048
+time: 2.047 s (0:00:02.047000)
+
+
+  0 Residual function norm 0.28767144
+    0 Residual function norm 0.28767144
+    1 Residual function norm 0.12109111
+    2 Residual function norm 0.011778019
+    3 Residual function norm 0.0027081754
+    4 Residual function norm 0.00094704128
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -3.52199998e-01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 12
+delta_t: 4.096
+time: 4.095 s (0:00:04.095000)
+
+
+  0 Residual function norm 0.25102516
+    0 Residual function norm 0.25102516
+    1 Residual function norm 0.17644882
+  1 Residual function norm 0.0044932919
+  2 Residual function norm 2.0805518e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -3.53510920e-01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 13
+delta_t: 8.192
+time: 8.191 s (0:00:08.191000)
+
+
+  0 Residual function norm 0.41196162
+    0 Residual function norm 0.41196162
+    1 Residual function norm 0.21540127
+  1 Residual function norm 0.0098357712
+  2 Residual function norm 1.3215285e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -3.71627299e-01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 14
+delta_t: 16.384
+time: 16.383 s (0:00:16.383000)
+
+
+  0 Residual function norm 0.18475513
+    0 Residual function norm 0.18475513
+    1 Residual function norm 0.084679406
+    2 Residual function norm 0.016502401
+    3 Residual function norm 0.0062179568
+    4 Residual function norm 0.002194674
+    5 Residual function norm 0.00066745836
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -4.79547520e-01 kg
+Got NaN values on output for mixture enthalpy. Forcing 0.
+
+######################### NEW TIME-STEP ##########################
+index: 15
+delta_t: 32.768
+time: 32.767 s (0:00:32.767000)
+
+
+  0 Residual function norm 0.1358731
+    0 Residual function norm 0.1358731
+    1 Residual function norm 0.081043925
+  1 Residual function norm 0.0016825827
+  2 Residual function norm 3.3584958e-07
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -4.79740470e-01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 16
+delta_t: 60
+time: 65.535 s (0:01:05.535000)
+
+
+  0 Residual function norm 0.21535484
+    0 Residual function norm 0.21535484
+    1 Residual function norm 0.074203188
+    2 Residual function norm 0.027573216
+    3 Residual function norm 0.015252141
+  1 Residual function norm 5.6389052e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -4.42270997e-01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 17
+delta_t: 60
+time: 125.535 s (0:02:05.535000)
+
+
+  0 Residual function norm 0.12277603
+    0 Residual function norm 0.12277603
+    1 Residual function norm 0.033226403
+    2 Residual function norm 0.0070136839
+    3 Residual function norm 0.0022366287
+    4 Residual function norm 0.0019724144
+  1 Residual function norm 1.9080659e-07
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -4.43379200e-01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 18
+delta_t: 60
+time: 185.535 s (0:03:05.535000)
+
+
+  0 Residual function norm 0.077558396
+    0 Residual function norm 0.077558396
+    1 Residual function norm 0.058780162
+  1 Residual function norm 0.00030205318
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.81676285e+00 kg
+
+######################### NEW TIME-STEP ##########################
+index: 19
+delta_t: 60
+time: 245.535 s (0:04:05.535000)
+
+
+  0 Residual function norm 0.29022219
+    0 Residual function norm 0.29022219
+    1 Residual function norm 0.053915607
+    2 Residual function norm 0.040579538
+  1 Residual function norm 0.00019248473
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 3.63982736e-01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 20
+delta_t: 60
+time: 305.535 s (0:05:05.535000)
+
+
+  0 Residual function norm 0.18522098
+    0 Residual function norm 0.18522098
+    1 Residual function norm 0.017107986
+    2 Residual function norm 0.0013558379
+    3 Residual function norm 0.00017293525
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.57588830e-01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 21
+delta_t: 60
+time: 365.535 s (0:06:05.535000)
+
+
+  0 Residual function norm 0.078097342
+    0 Residual function norm 0.078097342
+    1 Residual function norm 0.029325702
+    2 Residual function norm 0.011325559
+    3 Residual function norm 0.0090065737
+  1 Residual function norm 0.0068429386
+  2 Residual function norm 0.0057873883
+  3 Residual function norm 0.0051196662
+  4 Residual function norm 0.0046076976
+  5 Residual function norm 0.0041469263
+Nonlinear solve convergence status is DIVERGED_MAX_IT
+		 ******* BREAKING TIMESTEP 1 *******
+		 ******* DISABLING NONLINEAR-PRECONDITIONER *******
+  0 Residual function norm 0.11812528
+  1 Residual function norm 0.028840706
+  2 Residual function norm 1.2064849e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.63741576e-01 kg
+		 ******* RE-ENABLING NONLINEAR-PRECONDITIONER *******
+
+######################### NEW TIME-STEP ##########################
+index: 22
+delta_t: 33
+time: 395.535 s (0:06:35.535000)
+
+
+  0 Residual function norm 0.069301156
+    0 Residual function norm 0.069301156
+    1 Residual function norm 0.0059874128
+    2 Residual function norm 0.0010882332
+    3 Residual function norm 0.00025700749
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.04708799e+00 kg
+
+######################### NEW TIME-STEP ##########################
+index: 23
+delta_t: 60
+time: 428.535 s (0:07:08.535000)
+
+
+  0 Residual function norm 0.075441725
+    0 Residual function norm 0.075441725
+    1 Residual function norm 0.071443809
+  1 Residual function norm 0.00017551402
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 6.68860261e+00 kg
+
+######################### NEW TIME-STEP ##########################
+index: 24
+delta_t: 60
+time: 488.535 s (0:08:08.535000)
+
+
+  0 Residual function norm 0.076528181
+    0 Residual function norm 0.076528181
+    1 Residual function norm 0.0020910825
+    2 Residual function norm 0.00056575122
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00620256e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 25
+delta_t: 60
+time: 548.535 s (0:09:08.535000)
+
+
+  0 Residual function norm 0.071864882
+    0 Residual function norm 0.071864882
+    1 Residual function norm 0.0062506143
+    2 Residual function norm 0.0053995912
+  1 Residual function norm 2.1672993e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00721369e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 26
+delta_t: 60
+time: 608.535 s (0:10:08.535000)
+
+
+  0 Residual function norm 0.064167248
+    0 Residual function norm 0.064167248
+    1 Residual function norm 0.011329644
+    2 Residual function norm 0.008199677
+  1 Residual function norm 8.240709e-07
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00794633e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 27
+delta_t: 60
+time: 668.535 s (0:11:08.535000)
+
+
+  0 Residual function norm 0.057277927
+    0 Residual function norm 0.057277927
+    1 Residual function norm 0.0097601351
+    2 Residual function norm 0.00041319009
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -1.29305540e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 28
+delta_t: 60
+time: 728.535 s (0:12:08.535000)
+
+
+  0 Residual function norm 0.051170616
+    0 Residual function norm 0.051170616
+    1 Residual function norm 0.0093596758
+    2 Residual function norm 0.00012730898
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -1.62639918e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 29
+delta_t: 60
+time: 788.535 s (0:13:08.535000)
+
+
+  0 Residual function norm 0.045480396
+    0 Residual function norm 0.045480396
+    1 Residual function norm 0.0080371537
+    2 Residual function norm 0.0071264831
+  1 Residual function norm 1.3114174e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -1.62536071e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 30
+delta_t: 60
+time: 848.535 s (0:14:08.535000)
+
+
+  0 Residual function norm 0.04091499
+    0 Residual function norm 0.04091499
+    1 Residual function norm 0.0076864985
+    2 Residual function norm 0.0022696071
+    3 Residual function norm 0.0018152938
+  1 Residual function norm 9.1145049e-08
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -1.62531666e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 31
+delta_t: 60
+time: 908.535 s (0:15:08.535000)
+
+
+  0 Residual function norm 0.051699735
+    0 Residual function norm 0.051699735
+    1 Residual function norm 0.026752384
+  1 Residual function norm 0.023166067
+  2 Residual function norm 0.019688356
+  3 Residual function norm 5.1379705e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -1.62152361e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 32
+delta_t: 60
+time: 968.535 s (0:16:08.535000)
+
+
+  0 Residual function norm 0.025531143
+    0 Residual function norm 0.025531143
+    1 Residual function norm 0.0028476534
+    2 Residual function norm 0.0025052502
+  1 Residual function norm 8.6827005e-07
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -1.62013624e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 33
+delta_t: 60
+time: 1028.53 s (0:17:08.535000)
+
+
+  0 Residual function norm 0.031519273
+    0 Residual function norm 0.031519273
+    1 Residual function norm 0.0036097376
+    2 Residual function norm 0.00055043453
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -1.95164303e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 34
+delta_t: 60
+time: 1088.53 s (0:18:08.535000)
+
+
+  0 Residual function norm 0.025556146
+    0 Residual function norm 0.025556146
+    1 Residual function norm 0.022866109
+  1 Residual function norm 0.020580103
+  2 Residual function norm 0.018522572
+  3 Residual function norm 0.016678418
+  4 Residual function norm 0.011278288
+  5 Residual function norm 6.2656305e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -1.92501588e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 35
+delta_t: 60
+time: 1148.53 s (0:19:08.535000)
+
+
+  0 Residual function norm 0.023320247
+    0 Residual function norm 0.023320247
+    1 Residual function norm 0.0028662814
+    2 Residual function norm 0.0025282468
+  1 Residual function norm 1.1136412e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -1.87821869e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 36
+delta_t: 60
+time: 1208.53 s (0:20:08.535000)
+
+
+  0 Residual function norm 0.022229145
+    0 Residual function norm 0.022229145
+    1 Residual function norm 0.0043469241
+    2 Residual function norm 5.7260598e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -1.76092653e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 37
+delta_t: 60
+time: 1268.53 s (0:21:08.535000)
+
+
+  0 Residual function norm 0.019872239
+    0 Residual function norm 0.019872239
+    1 Residual function norm 0.003897145
+    2 Residual function norm 5.9340362e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -1.84279686e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 38
+delta_t: 60
+time: 1328.53 s (0:22:08.535000)
+
+
+  0 Residual function norm 0.017740984
+    0 Residual function norm 0.017740984
+    1 Residual function norm 0.0035100618
+    2 Residual function norm 0.00011688008
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -2.27062201e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 39
+delta_t: 60
+time: 1388.53 s (0:23:08.535000)
+
+
+  0 Residual function norm 0.015813868
+    0 Residual function norm 0.015813868
+    1 Residual function norm 0.0031589215
+    2 Residual function norm 0.00010976639
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -2.67549799e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 40
+delta_t: 60
+time: 1448.53 s (0:24:08.535000)
+
+
+  0 Residual function norm 0.014088948
+    0 Residual function norm 0.014088948
+    1 Residual function norm 0.0027392058
+    2 Residual function norm 6.9805256e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -2.89703628e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 41
+delta_t: 60
+time: 1508.53 s (0:25:08.535000)
+
+
+  0 Residual function norm 0.012629798
+    0 Residual function norm 0.012629798
+    1 Residual function norm 0.0024080188
+    2 Residual function norm 4.3724947e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -2.89938839e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 42
+delta_t: 60
+time: 1568.53 s (0:26:08.535000)
+
+
+  0 Residual function norm 0.011378537
+    0 Residual function norm 0.011378537
+    1 Residual function norm 0.0021375026
+    2 Residual function norm 0.0011730087
+  1 Residual function norm 2.1435356e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -2.89025691e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 43
+delta_t: 60
+time: 1628.53 s (0:27:08.535000)
+
+
+  0 Residual function norm 0.010275143
+    0 Residual function norm 0.010275143
+    1 Residual function norm 0.0019717548
+    2 Residual function norm 1.5566708e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -2.94718274e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 44
+delta_t: 60
+time: 1688.53 s (0:28:08.535000)
+
+
+  0 Residual function norm 0.0092840327
+    0 Residual function norm 0.0092840327
+    1 Residual function norm 0.0017540298
+    2 Residual function norm 0.0015208463
+  1 Residual function norm 1.3930909e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -2.88937185e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 45
+delta_t: 60
+time: 1748.53 s (0:29:08.535000)
+
+
+  0 Residual function norm 0.008417258
+    0 Residual function norm 0.008417258
+    1 Residual function norm 0.00016290091
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -3.37427322e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 46
+delta_t: 60
+time: 1808.53 s (0:30:08.535000)
+
+
+  0 Residual function norm 0.0076969484
+    0 Residual function norm 0.0076969484
+    1 Residual function norm 0.00020416182
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -4.09493837e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 47
+delta_t: 60
+time: 1868.53 s (0:31:08.535000)
+
+
+  0 Residual function norm 0.0070386967
+    0 Residual function norm 0.0070386967
+    1 Residual function norm 9.5821159e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -4.41509351e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 48
+delta_t: 60
+time: 1928.53 s (0:32:08.535000)
+
+
+  0 Residual function norm 0.0064661735
+    0 Residual function norm 0.0064661735
+    1 Residual function norm 6.3971102e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -4.37859631e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 49
+delta_t: 60
+time: 1988.53 s (0:33:08.535000)
+
+
+  0 Residual function norm 0.0059923526
+    0 Residual function norm 0.0059923526
+    1 Residual function norm 7.937501e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -4.33532420e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 50
+delta_t: 60
+time: 2048.53 s (0:34:08.535000)
+
+
+  0 Residual function norm 0.0055889846
+    0 Residual function norm 0.0055889846
+    1 Residual function norm 0.000132881
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -4.54243606e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 51
+delta_t: 60
+time: 2108.53 s (0:35:08.535000)
+
+
+  0 Residual function norm 0.005243435
+    0 Residual function norm 0.005243435
+    1 Residual function norm 0.00019671362
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -4.85504793e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 52
+delta_t: 60
+time: 2168.53 s (0:36:08.535000)
+
+
+  0 Residual function norm 0.0049452058
+    0 Residual function norm 0.0049452058
+    1 Residual function norm 0.0002274204
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -4.99672207e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 53
+delta_t: 60
+time: 2228.53 s (0:37:08.535000)
+
+
+  0 Residual function norm 0.0046924664
+    0 Residual function norm 0.0046924664
+    1 Residual function norm 0.0002232977
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -5.04828680e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 54
+delta_t: 60
+time: 2288.53 s (0:38:08.535000)
+
+
+  0 Residual function norm 0.0044807659
+    0 Residual function norm 0.0044807659
+    1 Residual function norm 0.00026698281
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -5.09869954e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 55
+delta_t: 60
+time: 2348.53 s (0:39:08.535000)
+
+
+  0 Residual function norm 0.004296372
+    0 Residual function norm 0.004296372
+    1 Residual function norm 0.00031872023
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -5.24841245e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 56
+delta_t: 60
+time: 2408.53 s (0:40:08.535000)
+
+
+  0 Residual function norm 0.0041346776
+    0 Residual function norm 0.0041346776
+    1 Residual function norm 0.00034314561
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -5.45732933e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 57
+delta_t: 60
+time: 2468.53 s (0:41:08.535000)
+
+
+  0 Residual function norm 0.0039987128
+    0 Residual function norm 0.0039987128
+    1 Residual function norm 0.00035330272
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -5.63118520e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 58
+delta_t: 60
+time: 2528.53 s (0:42:08.535000)
+
+
+  0 Residual function norm 0.0038787745
+    0 Residual function norm 0.0038787745
+    1 Residual function norm 0.0003673371
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -5.81135491e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 59
+delta_t: 60
+time: 2588.53 s (0:43:08.535000)
+
+
+  0 Residual function norm 0.0037724505
+    0 Residual function norm 0.0037724505
+    1 Residual function norm 0.00038948556
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -5.95792132e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 60
+delta_t: 60
+time: 2648.53 s (0:44:08.535000)
+
+
+  0 Residual function norm 0.0036768661
+    0 Residual function norm 0.0036768661
+    1 Residual function norm 0.00041415333
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -6.15886758e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 61
+delta_t: 60
+time: 2708.53 s (0:45:08.535000)
+
+
+  0 Residual function norm 0.0035905486
+    0 Residual function norm 0.0035905486
+    1 Residual function norm 0.00044317928
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -6.36733941e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 62
+delta_t: 60
+time: 2768.53 s (0:46:08.535000)
+
+
+  0 Residual function norm 0.0035112548
+    0 Residual function norm 0.0035112548
+    1 Residual function norm 0.00047270235
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -6.57655658e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 63
+delta_t: 60
+time: 2828.53 s (0:47:08.535000)
+
+
+  0 Residual function norm 0.0034386347
+    0 Residual function norm 0.0034386347
+    1 Residual function norm 0.00048821329
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -6.80127957e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 64
+delta_t: 60
+time: 2888.53 s (0:48:08.535000)
+
+
+  0 Residual function norm 0.003372121
+    0 Residual function norm 0.003372121
+    1 Residual function norm 0.00052571006
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -7.05502160e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 65
+delta_t: 60
+time: 2948.53 s (0:49:08.535000)
+
+
+  0 Residual function norm 0.0075201023
+    0 Residual function norm 0.0075201023
+    1 Residual function norm 0.0035027226
+    2 Residual function norm 0.0020419631
+  1 Residual function norm 8.5504671e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -7.04336448e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 66
+delta_t: 60
+time: 3008.53 s (0:50:08.535000)
+
+
+  0 Residual function norm 0.0038765992
+    0 Residual function norm 0.0038765992
+    1 Residual function norm 0.0020824733
+  1 Residual function norm 1.1217084e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -7.04336759e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 67
+delta_t: 60
+time: 3068.53 s (0:51:08.535000)
+
+
+  0 Residual function norm 0.0052443659
+    0 Residual function norm 0.0052443659
+    1 Residual function norm 0.00095607544
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -7.43636324e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 68
+delta_t: 60
+time: 3128.53 s (0:52:08.535000)
+
+
+  0 Residual function norm 0.0061969237
+    0 Residual function norm 0.0061969237
+    1 Residual function norm 0.00144336
+    2 Residual function norm 0.00098393808
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -3.85902712e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 69
+delta_t: 60
+time: 3188.53 s (0:53:08.535000)
+
+
+  0 Residual function norm 0.0066130908
+    0 Residual function norm 0.0066130908
+    1 Residual function norm 0.001507026
+    2 Residual function norm 0.0006859994
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -2.13908959e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 70
+delta_t: 60
+time: 3248.53 s (0:54:08.535000)
+
+
+  0 Residual function norm 0.007818061
+    0 Residual function norm 0.007818061
+    1 Residual function norm 0.0017902266
+    2 Residual function norm 0.00068457102
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error -8.70867182e+00 kg
+
+######################### NEW TIME-STEP ##########################
+index: 71
+delta_t: 60
+time: 3308.53 s (0:55:08.535000)
+
+
+  0 Residual function norm 0.0092926937
+    0 Residual function norm 0.0092926937
+    1 Residual function norm 0.0021482641
+    2 Residual function norm 0.00074230926
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.60898102e-02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 72
+delta_t: 60
+time: 3368.53 s (0:56:08.535000)
+
+
+  0 Residual function norm 0.011205822
+    0 Residual function norm 0.011205822
+    1 Residual function norm 0.0026299392
+    2 Residual function norm 0.00087124027
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 5.50019640e+00 kg
+
+######################### NEW TIME-STEP ##########################
+index: 73
+delta_t: 60
+time: 3428.53 s (0:57:08.535000)
+
+
+  0 Residual function norm 0.013622517
+    0 Residual function norm 0.013622517
+    1 Residual function norm 0.0032277956
+    2 Residual function norm 0.0010626553
+    3 Residual function norm 0.00018266403
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.54980406e+00 kg
+
+######################### NEW TIME-STEP ##########################
+index: 74
+delta_t: 60
+time: 3488.53 s (0:58:08.535000)
+
+
+  0 Residual function norm 0.015775279
+    0 Residual function norm 0.015775279
+    1 Residual function norm 0.0035614781
+    2 Residual function norm 0.0011422823
+    3 Residual function norm 0.0001797056
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 3.07068165e+00 kg
+
+######################### NEW TIME-STEP ##########################
+index: 75
+delta_t: 60
+time: 3548.53 s (0:59:08.535000)
+
+
+  0 Residual function norm 0.019474842
+    0 Residual function norm 0.019474842
+    1 Residual function norm 0.004396989
+    2 Residual function norm 0.0014679278
+    3 Residual function norm 0.00023813689
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 4.12770652e+00 kg
+
+######################### NEW TIME-STEP ##########################
+index: 76
+delta_t: 60
+time: 3608.53 s (1:00:08.535000)
+
+
+  0 Residual function norm 0.023749381
+    0 Residual function norm 0.023749381
+    1 Residual function norm 0.0052581205
+    2 Residual function norm 0.0018379793
+    3 Residual function norm 0.00031509738
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 5.27309702e+00 kg
+
+######################### NEW TIME-STEP ##########################
+index: 77
+delta_t: 60
+time: 3668.53 s (1:01:08.535000)
+
+
+  0 Residual function norm 0.028971101
+    0 Residual function norm 0.028971101
+    1 Residual function norm 0.0062572964
+    2 Residual function norm 0.0023192998
+    3 Residual function norm 0.00051719641
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.70523124e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 78
+delta_t: 60
+time: 3728.53 s (1:02:08.535000)
+
+
+  0 Residual function norm 0.035212682
+    0 Residual function norm 0.035212682
+    1 Residual function norm 0.0073454481
+    2 Residual function norm 0.0029608031
+    3 Residual function norm 0.00058768269
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.43067087e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 79
+delta_t: 60
+time: 3788.53 s (1:03:08.535000)
+
+
+  0 Residual function norm 0.04259625
+    0 Residual function norm 0.04259625
+    1 Residual function norm 0.0085871137
+    2 Residual function norm 0.0037640311
+    3 Residual function norm 0.0008172792
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.39702529e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 80
+delta_t: 60
+time: 3848.53 s (1:04:08.535000)
+
+
+  0 Residual function norm 0.051295341
+    0 Residual function norm 0.051295341
+    1 Residual function norm 0.0099011881
+    2 Residual function norm 0.0048325039
+    3 Residual function norm 0.0011374253
+    4 Residual function norm 0.0001750547
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.35674169e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 81
+delta_t: 60
+time: 3908.53 s (1:05:08.535000)
+
+
+  0 Residual function norm 0.060446915
+    0 Residual function norm 0.060446915
+    1 Residual function norm 0.010786104
+    2 Residual function norm 0.0060018065
+  1 Residual function norm 3.0608861e-07
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.35673363e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 82
+delta_t: 60
+time: 3968.53 s (1:06:08.535000)
+
+
+  0 Residual function norm 0.071530294
+    0 Residual function norm 0.071530294
+    1 Residual function norm 0.0010353744
+    2 Residual function norm 5.6693551e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.35808298e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 83
+delta_t: 60
+time: 4028.53 s (1:07:08.535000)
+
+
+  0 Residual function norm 0.083985489
+    0 Residual function norm 0.083985489
+    1 Residual function norm 0.0026762147
+    2 Residual function norm 0.00029623536
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.34591594e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 84
+delta_t: 60
+time: 4088.53 s (1:08:08.535000)
+
+
+  0 Residual function norm 0.097774525
+    0 Residual function norm 0.097774525
+    1 Residual function norm 0.0051463405
+    2 Residual function norm 0.00087750424
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.07771755e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 85
+delta_t: 60
+time: 4148.53 s (1:09:08.535000)
+
+
+  0 Residual function norm 0.11284855
+    0 Residual function norm 0.11284855
+    1 Residual function norm 0.016424078
+    2 Residual function norm 0.010971226
+  1 Residual function norm 1.606585e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.07993196e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 86
+delta_t: 60
+time: 4208.53 s (1:10:08.535000)
+
+
+  0 Residual function norm 0.12868545
+    0 Residual function norm 0.12868545
+    1 Residual function norm 0.0029473774
+    2 Residual function norm 0.00022206963
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.08370315e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 87
+delta_t: 60
+time: 4268.53 s (1:11:08.535000)
+
+
+  0 Residual function norm 0.14800521
+    0 Residual function norm 0.14800521
+    1 Residual function norm 0.0075238995
+    2 Residual function norm 0.0010793221
+    3 Residual function norm 7.0016912e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.08358900e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 88
+delta_t: 60
+time: 4328.53 s (1:12:08.535000)
+
+
+  0 Residual function norm 0.16808119
+    0 Residual function norm 0.16808119
+    1 Residual function norm 0.0145076
+    2 Residual function norm 0.0027821588
+    3 Residual function norm 0.00026395674
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.08199715e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 89
+delta_t: 60
+time: 4388.53 s (1:13:08.535000)
+
+
+  0 Residual function norm 0.18932939
+    0 Residual function norm 0.18932939
+    1 Residual function norm 0.024373855
+    2 Residual function norm 0.0056293724
+    3 Residual function norm 0.00071486674
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03280675e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 90
+delta_t: 60
+time: 4448.53 s (1:14:08.535000)
+
+
+  0 Residual function norm 0.19384409
+    0 Residual function norm 0.19384409
+    1 Residual function norm 0.028709904
+    2 Residual function norm 0.0099248421
+    3 Residual function norm 0.0015689909
+    4 Residual function norm 9.6770281e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03028494e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 91
+delta_t: 60
+time: 4508.53 s (1:15:08.535000)
+
+
+  0 Residual function norm 0.15546513
+    0 Residual function norm 0.15546513
+    1 Residual function norm 0.016399685
+    2 Residual function norm 0.014258238
+  1 Residual function norm 5.0325202e-08
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03032716e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 92
+delta_t: 60
+time: 4568.53 s (1:16:08.535000)
+
+
+  0 Residual function norm 0.146446
+    0 Residual function norm 0.146446
+    1 Residual function norm 0.010283657
+    2 Residual function norm 0.001263191
+    3 Residual function norm 6.8556242e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03031437e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 93
+delta_t: 60
+time: 4628.53 s (1:17:08.535000)
+
+
+  0 Residual function norm 0.14451023
+    0 Residual function norm 0.14451023
+    1 Residual function norm 0.020445636
+    2 Residual function norm 0.0050843473
+    3 Residual function norm 0.00050838248
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03288730e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 94
+delta_t: 60
+time: 4688.53 s (1:18:08.535000)
+
+
+  0 Residual function norm 0.14594816
+    0 Residual function norm 0.14594816
+    1 Residual function norm 0.030295787
+    2 Residual function norm 0.011225565
+    3 Residual function norm 0.0015522283
+    4 Residual function norm 2.8529296e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03295604e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 95
+delta_t: 60
+time: 4748.53 s (1:19:08.535000)
+
+
+  0 Residual function norm 0.14718934
+    0 Residual function norm 0.14718934
+    1 Residual function norm 0.039208977
+    2 Residual function norm 0.018696184
+    3 Residual function norm 0.0033958907
+    4 Residual function norm 3.9373133e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03297318e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 96
+delta_t: 60
+time: 4808.53 s (1:20:08.535000)
+
+
+  0 Residual function norm 0.14897837
+    0 Residual function norm 0.14897837
+    1 Residual function norm 0.047665554
+    2 Residual function norm 0.026965961
+  1 Residual function norm 3.6169013e-08
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03302268e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 97
+delta_t: 60
+time: 4868.53 s (1:21:08.535000)
+
+
+  0 Residual function norm 0.15045358
+    0 Residual function norm 0.15045358
+    1 Residual function norm 0.012051096
+    2 Residual function norm 0.0030174886
+    3 Residual function norm 3.1173469e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03301070e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 98
+delta_t: 60
+time: 4928.53 s (1:22:08.535000)
+
+
+  0 Residual function norm 0.15172083
+    0 Residual function norm 0.15172083
+    1 Residual function norm 0.023097783
+    2 Residual function norm 0.01087887
+    3 Residual function norm 0.00028113882
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03291246e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 99
+delta_t: 60
+time: 4988.53 s (1:23:08.535000)
+
+
+  0 Residual function norm 0.15292014
+    0 Residual function norm 0.15292014
+    1 Residual function norm 0.033210072
+    2 Residual function norm 0.022275253
+  1 Residual function norm 3.7480224e-07
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03277616e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 100
+delta_t: 60
+time: 5048.53 s (1:24:08.535000)
+
+
+  0 Residual function norm 0.1533732
+    0 Residual function norm 0.1533732
+    1 Residual function norm 0.012253342
+    2 Residual function norm 0.0061472667
+  1 Residual function norm 6.2596285e-09
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03278561e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 101
+delta_t: 60
+time: 5108.53 s (1:25:08.535000)
+
+
+  0 Residual function norm 0.15385067
+    0 Residual function norm 0.15385067
+    1 Residual function norm 0.012306239
+    2 Residual function norm 0.0016173108
+    3 Residual function norm 2.238279e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03277609e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 102
+delta_t: 60
+time: 5168.53 s (1:26:08.535000)
+
+
+  0 Residual function norm 0.15403869
+    0 Residual function norm 0.15403869
+    1 Residual function norm 0.023313861
+    2 Residual function norm 0.0028200005
+    3 Residual function norm 9.610194e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03287030e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 103
+delta_t: 60
+time: 5228.53 s (1:27:08.535000)
+
+
+  0 Residual function norm 0.15373914
+    0 Residual function norm 0.15373914
+    1 Residual function norm 0.03304878
+    2 Residual function norm 0.00086608627
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.01798020e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 104
+delta_t: 60
+time: 5288.53 s (1:28:08.535000)
+
+
+  0 Residual function norm 0.1522169
+    0 Residual function norm 0.1522169
+    1 Residual function norm 0.04063536
+    2 Residual function norm 0.0050524976
+    3 Residual function norm 0.00017236245
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.01570475e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 105
+delta_t: 60
+time: 5348.53 s (1:29:08.535000)
+
+
+  0 Residual function norm 0.15214145
+    0 Residual function norm 0.15214145
+    1 Residual function norm 0.047960782
+    2 Residual function norm 0.012310948
+    3 Residual function norm 0.0016581817
+    4 Residual function norm 6.7681548e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.01596745e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 106
+delta_t: 60
+time: 5408.53 s (1:30:08.535000)
+
+
+  0 Residual function norm 0.15065945
+    0 Residual function norm 0.15065945
+    1 Residual function norm 0.053029505
+    2 Residual function norm 0.020364608
+    3 Residual function norm 0.0075088246
+    4 Residual function norm 0.00035021595
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.01698022e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 107
+delta_t: 60
+time: 5468.53 s (1:31:08.535000)
+
+
+  0 Residual function norm 0.14931564
+    0 Residual function norm 0.14931564
+    1 Residual function norm 0.056675616
+    2 Residual function norm 0.028204336
+    3 Residual function norm 0.002766235
+    4 Residual function norm 0.0011499352
+    5 Residual function norm 0.00025207205
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.01690790e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 108
+delta_t: 60
+time: 5528.53 s (1:32:08.535000)
+
+
+  0 Residual function norm 0.11810274
+    0 Residual function norm 0.11810274
+    1 Residual function norm 0.057516363
+    2 Residual function norm 0.031594198
+  1 Residual function norm 1.40458e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00597996e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 109
+delta_t: 60
+time: 5588.53 s (1:33:08.535000)
+
+
+  0 Residual function norm 0.16342883
+    0 Residual function norm 0.16342883
+    1 Residual function norm 0.0086100497
+    2 Residual function norm 0.0011862565
+    3 Residual function norm 0.0001549382
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00441420e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 110
+delta_t: 60
+time: 5648.53 s (1:34:08.535000)
+
+
+  0 Residual function norm 0.060403976
+    0 Residual function norm 0.060403976
+    1 Residual function norm 0.0030634252
+    2 Residual function norm 0.00054979572
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00933025e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 111
+delta_t: 60
+time: 5708.53 s (1:35:08.535000)
+
+
+  0 Residual function norm 0.10680161
+    0 Residual function norm 0.10680161
+    1 Residual function norm 0.0083752447
+    2 Residual function norm 0.0018942611
+    3 Residual function norm 0.00053839557
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.01001862e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 112
+delta_t: 60
+time: 5768.53 s (1:36:08.535000)
+
+
+  0 Residual function norm 0.086173655
+    0 Residual function norm 0.086173655
+    1 Residual function norm 0.013236186
+    2 Residual function norm 0.0020525166
+    3 Residual function norm 0.00015374695
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.01183524e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 113
+delta_t: 60
+time: 5828.53 s (1:37:08.535000)
+
+
+  0 Residual function norm 0.082949232
+    0 Residual function norm 0.082949232
+    1 Residual function norm 0.018587077
+    2 Residual function norm 0.0096493787
+  1 Residual function norm 0.0028227779
+  2 Residual function norm 6.8862441e-07
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.01126593e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 114
+delta_t: 60
+time: 5888.53 s (1:38:08.535000)
+
+
+  0 Residual function norm 0.059797502
+    0 Residual function norm 0.059797502
+    1 Residual function norm 0.0025878983
+    2 Residual function norm 0.00026358596
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00343868e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 115
+delta_t: 60
+time: 5948.53 s (1:39:08.535000)
+
+
+  0 Residual function norm 0.060049484
+    0 Residual function norm 0.060049484
+    1 Residual function norm 0.0077991435
+    2 Residual function norm 0.0054804059
+  1 Residual function norm 3.7526815e-08
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00340689e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 116
+delta_t: 60
+time: 6008.53 s (1:40:08.535000)
+
+
+  0 Residual function norm 0.059220587
+    0 Residual function norm 0.059220587
+    1 Residual function norm 0.0051632688
+    2 Residual function norm 0.00050638492
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00323853e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 117
+delta_t: 60
+time: 6068.53 s (1:41:08.535000)
+
+
+  0 Residual function norm 0.05907089
+    0 Residual function norm 0.05907089
+    1 Residual function norm 0.0098020195
+    2 Residual function norm 0.0048797653
+    3 Residual function norm 0.00029815635
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00298431e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 118
+delta_t: 60
+time: 6128.53 s (1:42:08.535000)
+
+
+  0 Residual function norm 0.0595699
+    0 Residual function norm 0.0595699
+    1 Residual function norm 0.014190227
+    2 Residual function norm 0.0046172364
+    3 Residual function norm 0.00014131476
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00296551e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 119
+delta_t: 60
+time: 6188.53 s (1:43:08.535000)
+
+
+  0 Residual function norm 0.059595418
+    0 Residual function norm 0.059595418
+    1 Residual function norm 0.018414055
+    2 Residual function norm 0.0089372463
+    3 Residual function norm 0.00026050169
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00278325e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 120
+delta_t: 60
+time: 6248.53 s (1:44:08.535000)
+
+
+  0 Residual function norm 0.059782228
+    0 Residual function norm 0.059782228
+    1 Residual function norm 0.02182062
+    2 Residual function norm 0.012169445
+  1 Residual function norm 8.4459013e-08
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00271021e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 121
+delta_t: 60
+time: 6308.53 s (1:45:08.535000)
+
+
+  0 Residual function norm 0.0600156
+    0 Residual function norm 0.0600156
+    1 Residual function norm 0.005388201
+    2 Residual function norm 0.0011060916
+    3 Residual function norm 7.6830677e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00270895e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 122
+delta_t: 60
+time: 6368.53 s (1:46:08.535000)
+
+
+  0 Residual function norm 0.060569133
+    0 Residual function norm 0.060569133
+    1 Residual function norm 0.010303204
+    2 Residual function norm 0.003524452
+    3 Residual function norm 6.8728358e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00270029e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 123
+delta_t: 60
+time: 6428.53 s (1:47:08.535000)
+
+
+  0 Residual function norm 0.08865988
+    0 Residual function norm 0.08865988
+    1 Residual function norm 0.014795348
+    2 Residual function norm 0.0083008852
+  1 Residual function norm 8.5732252e-09
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00269330e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 124
+delta_t: 60
+time: 6488.53 s (1:48:08.535000)
+
+
+  0 Residual function norm 0.078951983
+    0 Residual function norm 0.078951983
+    1 Residual function norm 0.0055749111
+    2 Residual function norm 0.0014912421
+    3 Residual function norm 0.00017907903
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00271180e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 125
+delta_t: 60
+time: 6548.53 s (1:49:08.535000)
+
+
+  0 Residual function norm 0.062096859
+    0 Residual function norm 0.062096859
+    1 Residual function norm 0.010475732
+    2 Residual function norm 0.0043691002
+    3 Residual function norm 6.204718e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00269409e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 126
+delta_t: 60
+time: 6608.53 s (1:50:08.535000)
+
+
+  0 Residual function norm 0.062359543
+    0 Residual function norm 0.062359543
+    1 Residual function norm 0.014900644
+    2 Residual function norm 0.0076198628
+  1 Residual function norm 2.473477e-08
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00267249e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 127
+delta_t: 60
+time: 6668.53 s (1:51:08.535000)
+
+
+  0 Residual function norm 0.062619706
+    0 Residual function norm 0.062619706
+    1 Residual function norm 0.0055046681
+    2 Residual function norm 0.0021955288
+    3 Residual function norm 6.4821638e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00266735e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 128
+delta_t: 60
+time: 6728.53 s (1:52:08.535000)
+
+
+  0 Residual function norm 0.062868013
+    0 Residual function norm 0.062868013
+    1 Residual function norm 0.01043901
+    2 Residual function norm 0.0058250129
+  1 Residual function norm 1.9906437e-08
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00264997e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 129
+delta_t: 60
+time: 6788.53 s (1:53:08.535000)
+
+
+  0 Residual function norm 0.063024855
+    0 Residual function norm 0.063024855
+    1 Residual function norm 0.0054800112
+    2 Residual function norm 0.0042491977
+  1 Residual function norm 1.2546738e-08
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00263913e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 130
+delta_t: 60
+time: 6848.53 s (1:54:08.535000)
+
+
+  0 Residual function norm 0.063105705
+    0 Residual function norm 0.063105705
+    1 Residual function norm 0.0054507279
+  1 Residual function norm 9.9947278e-08
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00257856e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 131
+delta_t: 60
+time: 6908.53 s (1:55:08.535000)
+
+
+  0 Residual function norm 0.063093954
+    0 Residual function norm 0.063093954
+    1 Residual function norm 0.005408831
+    2 Residual function norm 0.00026414494
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00261131e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 132
+delta_t: 60
+time: 6968.53 s (1:56:08.535000)
+
+
+  0 Residual function norm 0.070323028
+    0 Residual function norm 0.070323028
+    1 Residual function norm 0.01129271
+    2 Residual function norm 0.0014785945
+    3 Residual function norm 0.00021644937
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00269281e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 133
+delta_t: 60
+time: 7028.53 s (1:57:08.535000)
+
+
+  0 Residual function norm 0.064480735
+    0 Residual function norm 0.064480735
+    1 Residual function norm 0.014845529
+    2 Residual function norm 0.0036506936
+    3 Residual function norm 0.00094912559
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00305012e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 134
+delta_t: 60
+time: 7088.53 s (1:58:08.535000)
+
+
+  0 Residual function norm 0.063091169
+    0 Residual function norm 0.063091169
+    1 Residual function norm 0.018431467
+    2 Residual function norm 0.0079264365
+    3 Residual function norm 0.00022790335
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00304417e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 135
+delta_t: 60
+time: 7148.53 s (1:59:08.535000)
+
+
+  0 Residual function norm 0.062712407
+    0 Residual function norm 0.062712407
+    1 Residual function norm 0.021243689
+    2 Residual function norm 0.0088007029
+    3 Residual function norm 0.0012344768
+    4 Residual function norm 9.411433e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00301638e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 136
+delta_t: 60
+time: 7208.53 s (2:00:08.535000)
+
+
+  0 Residual function norm 0.062279726
+    0 Residual function norm 0.062279726
+    1 Residual function norm 0.023583036
+    2 Residual function norm 0.0061981164
+    3 Residual function norm 0.00012723271
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00233062e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 137
+delta_t: 60
+time: 7268.53 s (2:01:08.535000)
+
+
+  0 Residual function norm 0.062078579
+    0 Residual function norm 0.062078579
+    1 Residual function norm 0.025879206
+    2 Residual function norm 0.023049779
+  1 Residual function norm 1.6265836e-06
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00092145e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 138
+delta_t: 60
+time: 7328.53 s (2:02:08.535000)
+
+
+  0 Residual function norm 0.061147934
+    0 Residual function norm 0.061147934
+    1 Residual function norm 0.0047468813
+    2 Residual function norm 0.00052585818
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00082716e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 139
+delta_t: 60
+time: 7388.53 s (2:03:08.535000)
+
+
+  0 Residual function norm 0.059653921
+    0 Residual function norm 0.059653921
+    1 Residual function norm 0.0086459639
+    2 Residual function norm 0.0025948098
+    3 Residual function norm 2.3893242e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00090849e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 140
+delta_t: 60
+time: 7448.53 s (2:04:08.535000)
+
+
+  0 Residual function norm 0.042740701
+    0 Residual function norm 0.042740701
+    1 Residual function norm 0.0066116228
+    2 Residual function norm 0.00089688813
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.70601821e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 141
+delta_t: 60
+time: 7508.53 s (2:05:08.535000)
+
+
+  0 Residual function norm 0.024928464
+    0 Residual function norm 0.024928464
+    1 Residual function norm 0.0028609832
+    2 Residual function norm 0.00056725109
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.74719004e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 142
+delta_t: 60
+time: 7568.53 s (2:06:08.535000)
+
+
+  0 Residual function norm 0.025313949
+    0 Residual function norm 0.025313949
+    1 Residual function norm 0.0021780101
+    2 Residual function norm 0.00031624716
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.74662361e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 143
+delta_t: 60
+time: 7628.53 s (2:07:08.535000)
+
+
+  0 Residual function norm 0.0072507444
+    0 Residual function norm 0.0072507444
+    1 Residual function norm 0.0004506041
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.74809736e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 144
+delta_t: 60
+time: 7688.53 s (2:08:08.535000)
+
+
+  0 Residual function norm 0.0029997962
+    0 Residual function norm 0.0029997962
+    1 Residual function norm 0.00026530303
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.75862605e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 145
+delta_t: 60
+time: 7748.53 s (2:09:08.535000)
+
+
+  0 Residual function norm 0.0018019056
+    0 Residual function norm 0.0018019056
+    1 Residual function norm 0.0005354994
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.77221214e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 146
+delta_t: 60
+time: 7808.53 s (2:10:08.535000)
+
+
+  0 Residual function norm 0.0016215448
+    0 Residual function norm 0.0016215448
+    1 Residual function norm 0.00067527262
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.78768998e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 147
+delta_t: 60
+time: 7868.53 s (2:11:08.535000)
+
+
+  0 Residual function norm 0.0017804925
+    0 Residual function norm 0.0017804925
+    1 Residual function norm 0.00074923817
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.80477620e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 148
+delta_t: 60
+time: 7928.53 s (2:12:08.535000)
+
+
+  0 Residual function norm 0.0019473702
+    0 Residual function norm 0.0019473702
+    1 Residual function norm 0.00079016779
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.82333938e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 149
+delta_t: 60
+time: 7988.53 s (2:13:08.535000)
+
+
+  0 Residual function norm 0.0020665361
+    0 Residual function norm 0.0020665361
+    1 Residual function norm 0.00081435866
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.84327491e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 150
+delta_t: 60
+time: 8048.53 s (2:14:08.535000)
+
+
+  0 Residual function norm 0.0021466296
+    0 Residual function norm 0.0021466296
+    1 Residual function norm 0.0008300387
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.86431631e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 151
+delta_t: 60
+time: 8108.53 s (2:15:08.535000)
+
+
+  0 Residual function norm 0.0022019329
+    0 Residual function norm 0.0022019329
+    1 Residual function norm 0.00084135884
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.88649987e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 152
+delta_t: 60
+time: 8168.53 s (2:16:08.535000)
+
+
+  0 Residual function norm 0.0022429873
+    0 Residual function norm 0.0022429873
+    1 Residual function norm 0.00085046654
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.90975545e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 153
+delta_t: 60
+time: 8228.53 s (2:17:08.535000)
+
+
+  0 Residual function norm 0.0022762191
+    0 Residual function norm 0.0022762191
+    1 Residual function norm 0.00085838991
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.93398461e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 154
+delta_t: 60
+time: 8288.53 s (2:18:08.535000)
+
+
+  0 Residual function norm 0.0023053493
+    0 Residual function norm 0.0023053493
+    1 Residual function norm 0.0022889411
+  1 Residual function norm 0.0022660517
+  2 Residual function norm 0.0022433913
+  3 Residual function norm 0.0022209574
+  4 Residual function norm 0.0021987478
+  5 Residual function norm 0.0021767604
+Nonlinear solve convergence status is DIVERGED_MAX_IT
+		 ******* BREAKING TIMESTEP 1 *******
+		 ******* DISABLING NONLINEAR-PRECONDITIONER *******
+  0 Residual function norm 0.03779673
+  1 Residual function norm 0.036988717
+  2 Residual function norm 0.036555265
+  3 Residual function norm 2.0444235e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.92910759e+01 kg
+		 ******* RE-ENABLING NONLINEAR-PRECONDITIONER *******
+
+######################### NEW TIME-STEP ##########################
+index: 155
+delta_t: 33
+time: 8318.53 s (2:18:38.535000)
+
+
+  0 Residual function norm 0.039776821
+    0 Residual function norm 0.039776821
+    1 Residual function norm 0.0034800791
+    2 Residual function norm 0.00051217419
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.93216569e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 156
+delta_t: 60
+time: 8351.53 s (2:19:11.535000)
+
+
+  0 Residual function norm 0.036237661
+    0 Residual function norm 0.036237661
+    1 Residual function norm 0.0051208424
+    2 Residual function norm 0.00018689725
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.91342667e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 157
+delta_t: 60
+time: 8411.53 s (2:20:11.535000)
+
+
+  0 Residual function norm 0.10365181
+    0 Residual function norm 0.10365181
+    1 Residual function norm 0.027445303
+    2 Residual function norm 0.0081998165
+    3 Residual function norm 0.0048945547
+  1 Residual function norm 3.3811428e-08
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.91340756e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 158
+delta_t: 60
+time: 8471.53 s (2:21:11.535000)
+
+
+  0 Residual function norm 0.036400755
+    0 Residual function norm 0.036400755
+    1 Residual function norm 0.0061831362
+    2 Residual function norm 0.0014968087
+    3 Residual function norm 0.00012218135
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.91633394e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 159
+delta_t: 60
+time: 8531.53 s (2:22:11.535000)
+
+
+  0 Residual function norm 0.030031888
+    0 Residual function norm 0.030031888
+    1 Residual function norm 0.0046754362
+    2 Residual function norm 0.0013319742
+    3 Residual function norm 0.0005680856
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.91664461e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 160
+delta_t: 60
+time: 8591.53 s (2:23:11.535000)
+
+
+  0 Residual function norm 0.079263718
+    0 Residual function norm 0.079263718
+    1 Residual function norm 0.021065347
+    2 Residual function norm 0.0054022987
+    3 Residual function norm 0.0030141073
+  1 Residual function norm 2.7147581e-09
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.91664133e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 161
+delta_t: 60
+time: 8651.53 s (2:24:11.535000)
+
+
+  0 Residual function norm 0.096989644
+    0 Residual function norm 0.096989644
+    1 Residual function norm 0.0051224786
+    2 Residual function norm 0.00043589545
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.90244733e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 162
+delta_t: 60
+time: 8711.53 s (2:25:11.535000)
+
+
+  0 Residual function norm 0.11675903
+    0 Residual function norm 0.11675903
+    1 Residual function norm 0.013448075
+    2 Residual function norm 0.0065046949
+    3 Residual function norm 0.00092324731
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.89956291e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 163
+delta_t: 60
+time: 8771.53 s (2:26:11.535000)
+
+
+  0 Residual function norm 0.11572488
+    0 Residual function norm 0.11572488
+    1 Residual function norm 0.017004726
+    2 Residual function norm 0.0079813129
+    3 Residual function norm 0.001813083
+    4 Residual function norm 0.00073256114
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.88666906e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 164
+delta_t: 60
+time: 8831.53 s (2:27:11.535000)
+
+
+  0 Residual function norm 0.097348387
+    0 Residual function norm 0.097348387
+    1 Residual function norm 0.013487868
+    2 Residual function norm 0.0046195649
+    3 Residual function norm 0.001458291
+    4 Residual function norm 0.00051257928
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.88792377e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 165
+delta_t: 60
+time: 8891.53 s (2:28:11.535000)
+
+
+  0 Residual function norm 0.10193695
+    0 Residual function norm 0.10193695
+    1 Residual function norm 0.016495999
+    2 Residual function norm 0.0088958938
+  1 Residual function norm 3.4775722e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.02359676e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 166
+delta_t: 60
+time: 8951.53 s (2:29:11.535000)
+
+
+  0 Residual function norm 0.060839488
+    0 Residual function norm 0.060839488
+    1 Residual function norm 0.0017751849
+    2 Residual function norm 0.00035033414
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.01544984e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 167
+delta_t: 60
+time: 9011.53 s (2:30:11.535000)
+
+
+  0 Residual function norm 0.064530868
+    0 Residual function norm 0.064530868
+    1 Residual function norm 0.0064220983
+    2 Residual function norm 0.0015194391
+    3 Residual function norm 0.0001979831
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08528498e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 168
+delta_t: 60
+time: 9071.53 s (2:31:11.535000)
+
+
+  0 Residual function norm 0.071814575
+    0 Residual function norm 0.071814575
+    1 Residual function norm 0.014681424
+    2 Residual function norm 0.0097939771
+  1 Residual function norm 1.9049408e-08
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08528844e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 169
+delta_t: 60
+time: 9131.53 s (2:32:11.535000)
+
+
+  0 Residual function norm 0.066349017
+    0 Residual function norm 0.066349017
+    1 Residual function norm 0.0019892578
+    2 Residual function norm 7.0503186e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08310209e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 170
+delta_t: 60
+time: 9191.53 s (2:33:11.535000)
+
+
+  0 Residual function norm 0.059386592
+    0 Residual function norm 0.059386592
+    1 Residual function norm 0.0034014859
+    2 Residual function norm 0.00031623062
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08177952e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 171
+delta_t: 60
+time: 9251.53 s (2:34:11.535000)
+
+
+  0 Residual function norm 0.052527798
+    0 Residual function norm 0.052527798
+    1 Residual function norm 0.0044052988
+    2 Residual function norm 0.00066114888
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08214382e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 172
+delta_t: 60
+time: 9311.53 s (2:35:11.535000)
+
+
+  0 Residual function norm 0.046071288
+    0 Residual function norm 0.046071288
+    1 Residual function norm 0.0050699018
+    2 Residual function norm 0.00099060349
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08404728e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 173
+delta_t: 60
+time: 9371.53 s (2:36:11.535000)
+
+
+  0 Residual function norm 0.040069037
+    0 Residual function norm 0.040069037
+    1 Residual function norm 0.0054267515
+    2 Residual function norm 0.0012014749
+    3 Residual function norm 0.00031964629
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08371842e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 174
+delta_t: 60
+time: 9431.53 s (2:37:11.535000)
+
+
+  0 Residual function norm 0.033623567
+    0 Residual function norm 0.033623567
+    1 Residual function norm 0.0051508121
+    2 Residual function norm 0.0014020631
+    3 Residual function norm 0.00039666376
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08303654e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 175
+delta_t: 60
+time: 9491.53 s (2:38:11.535000)
+
+
+  0 Residual function norm 0.028372257
+    0 Residual function norm 0.028372257
+    1 Residual function norm 0.0048788674
+    2 Residual function norm 0.0013974793
+    3 Residual function norm 0.00045852889
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08236870e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 176
+delta_t: 60
+time: 9551.53 s (2:39:11.535000)
+
+
+  0 Residual function norm 0.023832777
+    0 Residual function norm 0.023832777
+    1 Residual function norm 0.0045187812
+    2 Residual function norm 0.0012402448
+    3 Residual function norm 0.00049033541
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08180595e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 177
+delta_t: 60
+time: 9611.53 s (2:40:11.535000)
+
+
+  0 Residual function norm 0.019895908
+    0 Residual function norm 0.019895908
+    1 Residual function norm 0.0040885007
+    2 Residual function norm 0.0010151369
+    3 Residual function norm 0.0004933318
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08139810e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 178
+delta_t: 60
+time: 9671.53 s (2:41:11.535000)
+
+
+  0 Residual function norm 0.016509055
+    0 Residual function norm 0.016509055
+    1 Residual function norm 0.0036237299
+    2 Residual function norm 0.00078184607
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08435420e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 179
+delta_t: 60
+time: 9731.53 s (2:42:11.535000)
+
+
+  0 Residual function norm 0.013952773
+    0 Residual function norm 0.013952773
+    1 Residual function norm 0.0032760488
+    2 Residual function norm 0.00093096373
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08700897e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 180
+delta_t: 60
+time: 9791.53 s (2:43:11.535000)
+
+
+  0 Residual function norm 0.011749304
+    0 Residual function norm 0.011749304
+    1 Residual function norm 0.00299354
+    2 Residual function norm 0.00050985579
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08927298e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 181
+delta_t: 60
+time: 9851.53 s (2:44:11.535000)
+
+
+  0 Residual function norm 0.0093883853
+    0 Residual function norm 0.0093883853
+    1 Residual function norm 0.0023742141
+    2 Residual function norm 0.00071810653
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.09115802e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 182
+delta_t: 60
+time: 9911.53 s (2:45:11.535000)
+
+
+  0 Residual function norm 0.0078743947
+    0 Residual function norm 0.0078743947
+    1 Residual function norm 0.002153456
+    2 Residual function norm 0.00027883886
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.09257752e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 183
+delta_t: 60
+time: 9971.53 s (2:46:11.535000)
+
+
+  0 Residual function norm 0.0061276913
+    0 Residual function norm 0.0061276913
+    1 Residual function norm 0.0015916781
+    2 Residual function norm 0.0005439161
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.09382829e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 184
+delta_t: 60
+time: 10031.5 s (2:47:11.535000)
+
+
+  0 Residual function norm 0.0052082593
+    0 Residual function norm 0.0052082593
+    1 Residual function norm 0.0014959817
+    2 Residual function norm 0.00013540191
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.09456452e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 185
+delta_t: 60
+time: 10091.5 s (2:48:11.535000)
+
+
+  0 Residual function norm 0.0039484869
+    0 Residual function norm 0.0039484869
+    1 Residual function norm 0.0010299713
+    2 Residual function norm 0.00039042394
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.09537197e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 186
+delta_t: 60
+time: 10151.5 s (2:49:11.535000)
+
+
+  0 Residual function norm 0.003407378
+    0 Residual function norm 0.003407378
+    1 Residual function norm 0.0010083375
+    2 Residual function norm 7.2676974e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.09561081e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 187
+delta_t: 60
+time: 10211.5 s (2:50:11.535000)
+
+
+  0 Residual function norm 0.0025398041
+    0 Residual function norm 0.0025398041
+    1 Residual function norm 0.00066165396
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.09447939e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 188
+delta_t: 60
+time: 10271.5 s (2:51:11.535000)
+
+
+  0 Residual function norm 0.0014529684
+    0 Residual function norm 0.0014529684
+    1 Residual function norm 0.00015398937
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.09349706e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 189
+delta_t: 60
+time: 10331.5 s (2:52:11.535000)
+
+
+  0 Residual function norm 0.0014144342
+    0 Residual function norm 0.0014144342
+    1 Residual function norm 0.00024438826
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.09222939e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 190
+delta_t: 60
+time: 10391.5 s (2:53:11.535000)
+
+
+  0 Residual function norm 0.001063373
+    0 Residual function norm 0.001063373
+    1 Residual function norm 0.00015018874
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.09071780e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 191
+delta_t: 60
+time: 10451.5 s (2:54:11.535000)
+
+
+  0 Residual function norm 0.00088528151
+    0 Residual function norm 0.00088528151
+    1 Residual function norm 0.00013181295
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08956606e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 192
+delta_t: 60
+time: 10511.5 s (2:55:11.535000)
+
+
+  0 Residual function norm 0.00071374793
+    0 Residual function norm 0.00071374793
+    1 Residual function norm 0.00010911107
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08841388e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 193
+delta_t: 60
+time: 10571.5 s (2:56:11.535000)
+
+
+  0 Residual function norm 0.0005712339
+    0 Residual function norm 0.0005712339
+    1 Residual function norm 7.1553111e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08778411e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 194
+delta_t: 60
+time: 10631.5 s (2:57:11.535000)
+
+
+  0 Residual function norm 0.00048301836
+    0 Residual function norm 0.00048301836
+    1 Residual function norm 7.2797874e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08706733e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 195
+delta_t: 60
+time: 10691.5 s (2:58:11.535000)
+
+
+  0 Residual function norm 0.00038371499
+    0 Residual function norm 0.00038371499
+    1 Residual function norm 4.249607e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08675624e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 196
+delta_t: 60
+time: 10751.5 s (2:59:11.535000)
+
+
+  0 Residual function norm 0.00033146665
+    0 Residual function norm 0.00033146665
+    1 Residual function norm 4.5578052e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08634455e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 197
+delta_t: 60
+time: 10811.5 s (3:00:11.535000)
+
+
+  0 Residual function norm 0.00027113959
+    0 Residual function norm 0.00027113959
+    1 Residual function norm 2.6188008e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08626436e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 198
+delta_t: 60
+time: 10871.5 s (3:01:11.535000)
+
+
+  0 Residual function norm 0.00023852522
+    0 Residual function norm 0.00023852522
+    1 Residual function norm 2.7968486e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08610180e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 199
+delta_t: 60
+time: 10931.5 s (3:02:11.535000)
+
+
+  0 Residual function norm 0.00020466396
+    0 Residual function norm 0.00020466396
+    1 Residual function norm 1.6543297e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08623010e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 200
+delta_t: 60
+time: 10991.5 s (3:03:11.535000)
+
+
+  0 Residual function norm 0.00018404962
+    0 Residual function norm 0.00018404962
+    1 Residual function norm 1.7066614e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08630257e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 201
+delta_t: 60
+time: 11051.5 s (3:04:11.535000)
+
+
+  0 Residual function norm 0.0001693093
+    0 Residual function norm 0.0001693093
+    1 Residual function norm 1.2665499e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08664110e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 202
+delta_t: 60
+time: 11111.5 s (3:05:11.535000)
+
+
+  0 Residual function norm 0.00016179521
+    0 Residual function norm 0.00016179521
+    1 Residual function norm 3.2719857e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08694609e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 203
+delta_t: 60
+time: 11171.5 s (3:06:11.535000)
+
+
+  0 Residual function norm 0.00014756693
+    0 Residual function norm 0.00014756693
+    1 Residual function norm 4.5442716e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08732136e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 204
+delta_t: 60
+time: 11231.5 s (3:07:11.535000)
+
+
+  0 Residual function norm 0.00013764849
+    0 Residual function norm 0.00013764849
+    1 Residual function norm 3.2662602e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08810660e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 205
+delta_t: 60
+time: 11291.5 s (3:08:11.535000)
+
+
+  0 Residual function norm 0.00012853854
+    0 Residual function norm 0.00012853854
+    1 Residual function norm 1.9957355e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08885509e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 206
+delta_t: 60
+time: 11351.5 s (3:09:11.535000)
+
+
+  0 Residual function norm 0.00012423233
+    0 Residual function norm 0.00012423233
+    1 Residual function norm 2.7926987e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.08962846e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 207
+delta_t: 60
+time: 11411.5 s (3:10:11.535000)
+
+
+  0 Residual function norm 0.00012400626
+    0 Residual function norm 0.00012400626
+    1 Residual function norm 2.0378196e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.09071054e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 208
+delta_t: 60
+time: 11471.5 s (3:11:11.535000)
+
+
+  0 Residual function norm 0.00011638031
+    0 Residual function norm 0.00011638031
+    1 Residual function norm 3.5081613e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.09173404e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 209
+delta_t: 60
+time: 11531.5 s (3:12:11.535000)
+
+
+  0 Residual function norm 0.00011183111
+    0 Residual function norm 0.00011183111
+    1 Residual function norm 6.3301765e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.09274164e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 210
+delta_t: 60
+time: 11591.5 s (3:13:11.535000)
+
+
+  0 Residual function norm 0.00011601872
+    0 Residual function norm 0.00011601872
+    1 Residual function norm 9.4594347e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.03040093e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 211
+delta_t: 60
+time: 11651.5 s (3:14:11.535000)
+
+
+  0 Residual function norm 0.00012468915
+    0 Residual function norm 0.00012468915
+    1 Residual function norm 8.6678363e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.97015742e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 212
+delta_t: 60
+time: 11711.5 s (3:15:11.535000)
+
+
+  0 Residual function norm 0.00012723204
+    0 Residual function norm 0.00012723204
+    1 Residual function norm 0.00010281526
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.89644739e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 213
+delta_t: 60
+time: 11771.5 s (3:16:11.535000)
+
+
+  0 Residual function norm 0.00013140959
+    0 Residual function norm 0.00013140959
+    1 Residual function norm 0.00011810037
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.87354607e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 214
+delta_t: 60
+time: 11831.5 s (3:17:11.535000)
+
+
+  0 Residual function norm 0.0001335424
+    0 Residual function norm 0.0001335424
+    1 Residual function norm 0.00011031664
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.86354549e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 215
+delta_t: 60
+time: 11891.5 s (3:18:11.535000)
+
+
+  0 Residual function norm 0.00013422267
+    0 Residual function norm 0.00013422267
+    1 Residual function norm 0.00010669074
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.86827891e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 216
+delta_t: 60
+time: 11951.5 s (3:19:11.535000)
+
+
+  0 Residual function norm 0.00013535814
+    0 Residual function norm 0.00013535814
+    1 Residual function norm 9.740073e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.88802349e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 217
+delta_t: 60
+time: 12011.5 s (3:20:11.535000)
+
+
+  0 Residual function norm 0.00013571816
+    0 Residual function norm 0.00013571816
+    1 Residual function norm 0.00010911003
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.93984044e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 218
+delta_t: 60
+time: 12071.5 s (3:21:11.535000)
+
+
+  0 Residual function norm 0.00013758595
+    0 Residual function norm 0.00013758595
+    1 Residual function norm 0.00011705976
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.01452870e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 219
+delta_t: 60
+time: 12131.5 s (3:22:11.535000)
+
+
+  0 Residual function norm 0.0001404893
+    0 Residual function norm 0.0001404893
+    1 Residual function norm 0.00012101406
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.03422874e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 220
+delta_t: 60
+time: 12191.5 s (3:23:11.535000)
+
+
+  0 Residual function norm 0.00014327783
+    0 Residual function norm 0.00014327783
+    1 Residual function norm 0.00011912503
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.01782249e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 221
+delta_t: 60
+time: 12251.5 s (3:24:11.535000)
+
+
+  0 Residual function norm 0.00014482262
+    0 Residual function norm 0.00014482262
+    1 Residual function norm 0.00013160056
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.98450075e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 222
+delta_t: 60
+time: 12311.5 s (3:25:11.535000)
+
+
+  0 Residual function norm 0.00014802508
+    0 Residual function norm 0.00014802508
+    1 Residual function norm 4.5527556e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.98693747e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 223
+delta_t: 60
+time: 12371.5 s (3:26:11.535000)
+
+
+  0 Residual function norm 0.00013470053
+    0 Residual function norm 0.00013470053
+    1 Residual function norm 0.00012185266
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.00338332e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 224
+delta_t: 60
+time: 12431.5 s (3:27:11.535000)
+
+
+  0 Residual function norm 0.00014194088
+    0 Residual function norm 0.00014194088
+    1 Residual function norm 4.1833047e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.00550994e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 225
+delta_t: 60
+time: 12491.5 s (3:28:11.535000)
+
+
+  0 Residual function norm 0.00012643882
+    0 Residual function norm 0.00012643882
+    1 Residual function norm 0.00010964176
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.06973708e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 226
+delta_t: 60
+time: 12551.5 s (3:29:11.535000)
+
+
+  0 Residual function norm 0.00013320882
+    0 Residual function norm 0.00013320882
+    1 Residual function norm 0.00010399047
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.13361565e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 227
+delta_t: 60
+time: 12611.5 s (3:30:11.535000)
+
+
+  0 Residual function norm 0.00013474221
+    0 Residual function norm 0.00013474221
+    1 Residual function norm 0.00011913238
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.14666773e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 228
+delta_t: 60
+time: 12671.5 s (3:31:11.535000)
+
+
+  0 Residual function norm 0.00013758105
+    0 Residual function norm 0.00013758105
+    1 Residual function norm 9.9549032e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.14929761e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 229
+delta_t: 60
+time: 12731.5 s (3:32:11.535000)
+
+
+  0 Residual function norm 0.00013261922
+    0 Residual function norm 0.00013261922
+    1 Residual function norm 0.00012346557
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.14231666e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 230
+delta_t: 60
+time: 12791.5 s (3:33:11.535000)
+
+
+  0 Residual function norm 0.00013244712
+    0 Residual function norm 0.00013244712
+    1 Residual function norm 9.2797618e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.12902923e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 231
+delta_t: 60
+time: 12851.5 s (3:34:11.535000)
+
+
+  0 Residual function norm 0.00013091756
+    0 Residual function norm 0.00013091756
+    1 Residual function norm 0.00011807297
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.11425320e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 232
+delta_t: 60
+time: 12911.5 s (3:35:11.535000)
+
+
+  0 Residual function norm 0.00013300871
+    0 Residual function norm 0.00013300871
+    1 Residual function norm 7.2445202e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.10845075e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 233
+delta_t: 60
+time: 12971.5 s (3:36:11.535000)
+
+
+  0 Residual function norm 0.0001235947
+    0 Residual function norm 0.0001235947
+    1 Residual function norm 0.00011363677
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.13900615e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 234
+delta_t: 60
+time: 13031.5 s (3:37:11.535000)
+
+
+  0 Residual function norm 0.0001270639
+    0 Residual function norm 0.0001270639
+    1 Residual function norm 0.00010680107
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.14152389e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 235
+delta_t: 60
+time: 13091.5 s (3:38:11.535000)
+
+
+  0 Residual function norm 0.00012339697
+    0 Residual function norm 0.00012339697
+    1 Residual function norm 0.00010952722
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.10486151e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 236
+delta_t: 60
+time: 13151.5 s (3:39:11.535000)
+
+
+  0 Residual function norm 0.00012429318
+    0 Residual function norm 0.00012429318
+    1 Residual function norm 0.00010233032
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.05432612e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 237
+delta_t: 60
+time: 13211.5 s (3:40:11.535000)
+
+
+  0 Residual function norm 0.00012577424
+    0 Residual function norm 0.00012577424
+    1 Residual function norm 0.00010058296
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.99614919e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 238
+delta_t: 60
+time: 13271.5 s (3:41:11.535000)
+
+
+  0 Residual function norm 0.0001252513
+    0 Residual function norm 0.0001252513
+    1 Residual function norm 0.00011549706
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.92008595e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 239
+delta_t: 60
+time: 13331.5 s (3:42:11.535000)
+
+
+  0 Residual function norm 0.00012787271
+    0 Residual function norm 0.00012787271
+    1 Residual function norm 3.6769924e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.89716704e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 240
+delta_t: 60
+time: 13391.5 s (3:43:11.535000)
+
+
+  0 Residual function norm 0.00011481586
+    0 Residual function norm 0.00011481586
+    1 Residual function norm 9.2934756e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.87551950e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 241
+delta_t: 60
+time: 13451.5 s (3:44:11.535000)
+
+
+  0 Residual function norm 0.00011753319
+    0 Residual function norm 0.00011753319
+    1 Residual function norm 9.97898e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.86772562e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 242
+delta_t: 60
+time: 13511.5 s (3:45:11.535000)
+
+
+  0 Residual function norm 0.00011956488
+    0 Residual function norm 0.00011956488
+    1 Residual function norm 8.9802476e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.87510359e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 243
+delta_t: 60
+time: 13571.5 s (3:46:11.535000)
+
+
+  0 Residual function norm 0.00011898204
+    0 Residual function norm 0.00011898204
+    1 Residual function norm 0.00010705853
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.91252986e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 244
+delta_t: 60
+time: 13631.5 s (3:47:11.535000)
+
+
+  0 Residual function norm 0.00012147839
+    0 Residual function norm 0.00012147839
+    1 Residual function norm 6.5408697e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.91540747e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 245
+delta_t: 60
+time: 13691.5 s (3:48:11.535000)
+
+
+  0 Residual function norm 0.00011480359
+    0 Residual function norm 0.00011480359
+    1 Residual function norm 0.00010196693
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.90312217e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 246
+delta_t: 60
+time: 13751.5 s (3:49:11.535000)
+
+
+  0 Residual function norm 0.00011868948
+    0 Residual function norm 0.00011868948
+    1 Residual function norm 7.0456984e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.90611671e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 247
+delta_t: 60
+time: 13811.5 s (3:50:11.535000)
+
+
+  0 Residual function norm 0.00010858972
+    0 Residual function norm 0.00010858972
+    1 Residual function norm 9.8322075e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.87647552e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 248
+delta_t: 60
+time: 13871.5 s (3:51:11.535000)
+
+
+  0 Residual function norm 0.00011133775
+    0 Residual function norm 0.00011133775
+    1 Residual function norm 7.9808351e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.85084856e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 249
+delta_t: 60
+time: 13931.5 s (3:52:11.535000)
+
+
+  0 Residual function norm 0.0001108042
+    0 Residual function norm 0.0001108042
+    1 Residual function norm 9.9383495e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.81903281e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 250
+delta_t: 60
+time: 13991.5 s (3:53:11.535000)
+
+
+  0 Residual function norm 0.0001124627
+    0 Residual function norm 0.0001124627
+    1 Residual function norm 5.2711318e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.80974899e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 251
+delta_t: 60
+time: 14051.5 s (3:54:11.535000)
+
+
+  0 Residual function norm 0.00010398074
+    0 Residual function norm 0.00010398074
+    1 Residual function norm 9.4893988e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.83203622e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 252
+delta_t: 60
+time: 14111.5 s (3:55:11.535000)
+
+
+  0 Residual function norm 0.00010827054
+    0 Residual function norm 0.00010827054
+    1 Residual function norm 9.9843186e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.83417577e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 253
+delta_t: 60
+time: 14171.5 s (3:56:11.535000)
+
+
+  0 Residual function norm 0.00010672702
+    0 Residual function norm 0.00010672702
+    1 Residual function norm 9.2514569e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.80164788e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 254
+delta_t: 60
+time: 14231.5 s (3:57:11.535000)
+
+
+  0 Residual function norm 0.00010601486
+    0 Residual function norm 0.00010601486
+    1 Residual function norm 8.7748273e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.75758197e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 255
+delta_t: 60
+time: 14291.5 s (3:58:11.535000)
+
+
+  0 Residual function norm 0.00010714402
+    0 Residual function norm 0.00010714402
+    1 Residual function norm 7.9695456e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.71491421e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 256
+delta_t: 60
+time: 14351.5 s (3:59:11.535000)
+
+
+  0 Residual function norm 0.0001060523
+    0 Residual function norm 0.0001060523
+    1 Residual function norm 9.7902057e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.64852598e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 257
+delta_t: 60
+time: 14411.5 s (4:00:11.535000)
+
+
+  0 Residual function norm 0.00010811939
+    0 Residual function norm 0.00010811939
+    1 Residual function norm 4.3057741e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.63282603e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 258
+delta_t: 60
+time: 14471.5 s (4:01:11.535000)
+
+
+  0 Residual function norm 9.7648261e-05
+    0 Residual function norm 9.7648261e-05
+    1 Residual function norm 8.0320259e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.61593453e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 259
+delta_t: 60
+time: 14531.5 s (4:02:11.535000)
+
+
+  0 Residual function norm 9.9937355e-05
+    0 Residual function norm 9.9937355e-05
+    1 Residual function norm 7.5423618e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.61875688e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 260
+delta_t: 60
+time: 14591.5 s (4:03:11.535000)
+
+
+  0 Residual function norm 9.586696e-05
+    0 Residual function norm 9.586696e-05
+    1 Residual function norm 8.3380833e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.66606130e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 261
+delta_t: 60
+time: 14651.5 s (4:04:11.535000)
+
+
+  0 Residual function norm 9.6529897e-05
+    0 Residual function norm 9.6529897e-05
+    1 Residual function norm 7.3356351e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.71512342e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 262
+delta_t: 60
+time: 14711.5 s (4:05:11.535000)
+
+
+  0 Residual function norm 9.7683009e-05
+    0 Residual function norm 9.7683009e-05
+    1 Residual function norm 7.919062e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.79082739e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 263
+delta_t: 60
+time: 14771.5 s (4:06:11.535000)
+
+
+  0 Residual function norm 9.735389e-05
+    0 Residual function norm 9.735389e-05
+    1 Residual function norm 8.4964807e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.80619764e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 264
+delta_t: 60
+time: 14831.5 s (4:07:11.535000)
+
+
+  0 Residual function norm 9.9500576e-05
+    0 Residual function norm 9.9500576e-05
+    1 Residual function norm 7.9592065e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.80660496e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 265
+delta_t: 60
+time: 14891.5 s (4:08:11.535000)
+
+
+  0 Residual function norm 0.00010057506
+    0 Residual function norm 0.00010057506
+    1 Residual function norm 9.2167282e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.76581396e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 266
+delta_t: 60
+time: 14951.5 s (4:09:11.535000)
+
+
+  0 Residual function norm 0.00010303457
+    0 Residual function norm 0.00010303457
+    1 Residual function norm 2.6375694e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.76927504e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 267
+delta_t: 60
+time: 15011.5 s (4:10:11.535000)
+
+
+  0 Residual function norm 9.2080853e-05
+    0 Residual function norm 9.2080853e-05
+    1 Residual function norm 7.665638e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.75906160e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 268
+delta_t: 60
+time: 15071.5 s (4:11:11.535000)
+
+
+  0 Residual function norm 9.5295138e-05
+    0 Residual function norm 9.5295138e-05
+    1 Residual function norm 8.5851198e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.75295579e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 269
+delta_t: 60
+time: 15131.5 s (4:12:11.535000)
+
+
+  0 Residual function norm 9.7855879e-05
+    0 Residual function norm 9.7855879e-05
+    1 Residual function norm 5.8419284e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.75613095e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 270
+delta_t: 60
+time: 15191.5 s (4:13:11.535000)
+
+
+  0 Residual function norm 9.2026207e-05
+    0 Residual function norm 9.2026207e-05
+    1 Residual function norm 8.3827497e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.79781315e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 271
+delta_t: 60
+time: 15251.5 s (4:14:11.535000)
+
+
+  0 Residual function norm 9.3807393e-05
+    0 Residual function norm 9.3807393e-05
+    1 Residual function norm 3.7638834e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.80074830e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 272
+delta_t: 60
+time: 15311.5 s (4:15:11.535000)
+
+
+  0 Residual function norm 8.5726352e-05
+    0 Residual function norm 8.5726352e-05
+    1 Residual function norm 7.6689347e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.77906013e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 273
+delta_t: 60
+time: 15371.5 s (4:16:11.535000)
+
+
+  0 Residual function norm 9.1987011e-05
+    0 Residual function norm 9.1987011e-05
+    1 Residual function norm 6.6640629e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.78226172e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 274
+delta_t: 60
+time: 15431.5 s (4:17:11.535000)
+
+
+  0 Residual function norm 8.4747121e-05
+    0 Residual function norm 8.4747121e-05
+    1 Residual function norm 7.3559612e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.74710262e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 275
+delta_t: 60
+time: 15491.5 s (4:18:11.535000)
+
+
+  0 Residual function norm 8.6937007e-05
+    0 Residual function norm 8.6937007e-05
+    1 Residual function norm 6.584126e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.71712659e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 276
+delta_t: 60
+time: 15551.5 s (4:19:11.535000)
+
+
+  0 Residual function norm 8.6794193e-05
+    0 Residual function norm 8.6794193e-05
+    1 Residual function norm 7.4270543e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.68636297e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 277
+delta_t: 60
+time: 15611.5 s (4:20:11.535000)
+
+
+  0 Residual function norm 8.7763664e-05
+    0 Residual function norm 8.7763664e-05
+    1 Residual function norm 7.2811198e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.66399424e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 278
+delta_t: 60
+time: 15671.5 s (4:21:11.535000)
+
+
+  0 Residual function norm 8.9014063e-05
+    0 Residual function norm 8.9014063e-05
+    1 Residual function norm 8.0143669e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.64876648e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 279
+delta_t: 60
+time: 15731.5 s (4:22:11.535000)
+
+
+  0 Residual function norm 8.9943214e-05
+    0 Residual function norm 8.9943214e-05
+    1 Residual function norm 2.7529022e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.65207224e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 280
+delta_t: 60
+time: 15791.5 s (4:23:11.535000)
+
+
+  0 Residual function norm 8.2968558e-05
+    0 Residual function norm 8.2968558e-05
+    1 Residual function norm 7.6205701e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.69308757e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 281
+delta_t: 60
+time: 15851.5 s (4:24:11.535000)
+
+
+  0 Residual function norm 8.7477458e-05
+    0 Residual function norm 8.7477458e-05
+    1 Residual function norm 3.7447753e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.69605081e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 282
+delta_t: 60
+time: 15911.5 s (4:25:11.535000)
+
+
+  0 Residual function norm 8.1084166e-05
+    0 Residual function norm 8.1084166e-05
+    1 Residual function norm 7.3050791e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.64265321e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 283
+delta_t: 60
+time: 15971.5 s (4:26:11.535000)
+
+
+  0 Residual function norm 8.6146419e-05
+    0 Residual function norm 8.6146419e-05
+    1 Residual function norm 6.2147981e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.59298278e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 284
+delta_t: 60
+time: 16031.5 s (4:27:11.535000)
+
+
+  0 Residual function norm 0.38240575
+    0 Residual function norm 0.38240575
+    1 Residual function norm 0.36900753
+  1 Residual function norm 0.016732452
+  2 Residual function norm 5.5880202e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.56827318e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 285
+delta_t: 60
+time: 16091.5 s (4:28:11.535000)
+
+
+  0 Residual function norm 0.068477557
+    0 Residual function norm 0.068477557
+    1 Residual function norm 0.0090213193
+    2 Residual function norm 0.0003006383
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.67004234e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 286
+delta_t: 60
+time: 16151.5 s (4:29:11.535000)
+
+
+  0 Residual function norm 0.019041147
+    0 Residual function norm 0.019041147
+    1 Residual function norm 0.0021321258
+    2 Residual function norm 0.00023579574
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.60872754e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 287
+delta_t: 60
+time: 16211.5 s (4:30:11.535000)
+
+
+  0 Residual function norm 0.0045265016
+    0 Residual function norm 0.0045265016
+    1 Residual function norm 0.00097689844
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.85909933e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 288
+delta_t: 60
+time: 16271.5 s (4:31:11.535000)
+
+
+  0 Residual function norm 0.0024393306
+    0 Residual function norm 0.0024393306
+    1 Residual function norm 0.00063010194
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.78974407e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 289
+delta_t: 60
+time: 16331.5 s (4:32:11.535000)
+
+
+  0 Residual function norm 0.0015993255
+    0 Residual function norm 0.0015993255
+    1 Residual function norm 0.00054710283
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.90517650e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 290
+delta_t: 60
+time: 16391.5 s (4:33:11.535000)
+
+
+  0 Residual function norm 0.0013186222
+    0 Residual function norm 0.0013186222
+    1 Residual function norm 0.00050358365
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.88073297e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 291
+delta_t: 60
+time: 16451.5 s (4:34:11.535000)
+
+
+  0 Residual function norm 0.0012135354
+    0 Residual function norm 0.0012135354
+    1 Residual function norm 0.00050058165
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.26636908e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 292
+delta_t: 60
+time: 16511.5 s (4:35:11.535000)
+
+
+  0 Residual function norm 0.0010893901
+    0 Residual function norm 0.0010893901
+    1 Residual function norm 0.00040383147
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.42831015e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 293
+delta_t: 60
+time: 16571.5 s (4:36:11.535000)
+
+
+  0 Residual function norm 0.00099941748
+    0 Residual function norm 0.00099941748
+    1 Residual function norm 0.00037376987
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.65347485e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 294
+delta_t: 60
+time: 16631.5 s (4:37:11.535000)
+
+
+  0 Residual function norm 0.00092526787
+    0 Residual function norm 0.00092526787
+    1 Residual function norm 0.00034726745
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 2.85500628e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 295
+delta_t: 60
+time: 16691.5 s (4:38:11.535000)
+
+
+  0 Residual function norm 0.00086377131
+    0 Residual function norm 0.00086377131
+    1 Residual function norm 0.00036185465
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 3.74578299e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 296
+delta_t: 60
+time: 16751.5 s (4:39:11.535000)
+
+
+  0 Residual function norm 0.00083347714
+    0 Residual function norm 0.00083347714
+    1 Residual function norm 0.00035959326
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 3.23016660e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 297
+delta_t: 60
+time: 16811.5 s (4:40:11.535000)
+
+
+  0 Residual function norm 0.00076269979
+    0 Residual function norm 0.00076269979
+    1 Residual function norm 0.00028675079
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 3.37754169e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 298
+delta_t: 60
+time: 16871.5 s (4:41:11.535000)
+
+
+  0 Residual function norm 0.00071944827
+    0 Residual function norm 0.00071944827
+    1 Residual function norm 0.00027499617
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 3.65520578e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 299
+delta_t: 60
+time: 16931.5 s (4:42:11.535000)
+
+
+  0 Residual function norm 0.00068123705
+    0 Residual function norm 0.00068123705
+    1 Residual function norm 0.00026220135
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 3.87865760e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 300
+delta_t: 60
+time: 16991.5 s (4:43:11.535000)
+
+
+  0 Residual function norm 0.00064670661
+    0 Residual function norm 0.00064670661
+    1 Residual function norm 0.00025220914
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 4.07185289e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 301
+delta_t: 60
+time: 17051.5 s (4:44:11.535000)
+
+
+  0 Residual function norm 0.00061519916
+    0 Residual function norm 0.00061519916
+    1 Residual function norm 0.0002414518
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 4.18809992e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 302
+delta_t: 60
+time: 17111.5 s (4:45:11.535000)
+
+
+  0 Residual function norm 0.00058915882
+    0 Residual function norm 0.00058915882
+    1 Residual function norm 0.00023436705
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 4.31584963e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 303
+delta_t: 60
+time: 17171.5 s (4:46:11.535000)
+
+
+  0 Residual function norm 0.00056554223
+    0 Residual function norm 0.00056554223
+    1 Residual function norm 0.00022568803
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 4.39355500e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 304
+delta_t: 60
+time: 17231.5 s (4:47:11.535000)
+
+
+  0 Residual function norm 0.00054317697
+    0 Residual function norm 0.00054317697
+    1 Residual function norm 0.00021989027
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 4.50821287e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 305
+delta_t: 60
+time: 17291.5 s (4:48:11.535000)
+
+
+  0 Residual function norm 0.00052527218
+    0 Residual function norm 0.00052527218
+    1 Residual function norm 0.00021136538
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 4.66526760e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 306
+delta_t: 60
+time: 17351.5 s (4:49:11.535000)
+
+
+  0 Residual function norm 0.00050367813
+    0 Residual function norm 0.00050367813
+    1 Residual function norm 0.00020681386
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 4.81206000e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 307
+delta_t: 60
+time: 17411.5 s (4:50:11.535000)
+
+
+  0 Residual function norm 0.00048972587
+    0 Residual function norm 0.00048972587
+    1 Residual function norm 0.00019945816
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 4.96125564e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 308
+delta_t: 60
+time: 17471.5 s (4:51:11.535000)
+
+
+  0 Residual function norm 0.00047316207
+    0 Residual function norm 0.00047316207
+    1 Residual function norm 0.00019599543
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 5.10302968e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 309
+delta_t: 60
+time: 17531.5 s (4:52:11.535000)
+
+
+  0 Residual function norm 0.00046093183
+    0 Residual function norm 0.00046093183
+    1 Residual function norm 0.00018947079
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 5.26206809e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 310
+delta_t: 60
+time: 17591.5 s (4:53:11.535000)
+
+
+  0 Residual function norm 0.00044584512
+    0 Residual function norm 0.00044584512
+    1 Residual function norm 0.00018647694
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 5.40657544e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 311
+delta_t: 60
+time: 17651.5 s (4:54:11.535000)
+
+
+  0 Residual function norm 0.00043543875
+    0 Residual function norm 0.00043543875
+    1 Residual function norm 0.0001807498
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 5.57261396e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 312
+delta_t: 60
+time: 17711.5 s (4:55:11.535000)
+
+
+  0 Residual function norm 0.00042176924
+    0 Residual function norm 0.00042176924
+    1 Residual function norm 0.00017801035
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 5.71776962e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 313
+delta_t: 60
+time: 17771.5 s (4:56:11.535000)
+
+
+  0 Residual function norm 0.00041283409
+    0 Residual function norm 0.00041283409
+    1 Residual function norm 0.00017296128
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 5.88748663e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 314
+delta_t: 60
+time: 17831.5 s (4:57:11.535000)
+
+
+  0 Residual function norm 0.00040029266
+    0 Residual function norm 0.00040029266
+    1 Residual function norm 0.00017036508
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 6.03150072e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 315
+delta_t: 60
+time: 17891.5 s (4:58:11.535000)
+
+
+  0 Residual function norm 0.00039249149
+    0 Residual function norm 0.00039249149
+    1 Residual function norm 0.00016588147
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 6.20236574e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 316
+delta_t: 60
+time: 17951.5 s (4:59:11.535000)
+
+
+  0 Residual function norm 0.00038087387
+    0 Residual function norm 0.00038087387
+    1 Residual function norm 0.00016336771
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 6.34403332e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 317
+delta_t: 60
+time: 18011.5 s (5:00:11.535000)
+
+
+  0 Residual function norm 0.00037395454
+    0 Residual function norm 0.00037395454
+    1 Residual function norm 0.00015935226
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 6.51410616e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 318
+delta_t: 60
+time: 18071.5 s (5:01:11.535000)
+
+
+  0 Residual function norm 0.00036311741
+    0 Residual function norm 0.00036311741
+    1 Residual function norm 0.00015689233
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 6.65259529e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 319
+delta_t: 60
+time: 18131.5 s (5:02:11.535000)
+
+
+  0 Residual function norm 0.0003568922
+    0 Residual function norm 0.0003568922
+    1 Residual function norm 0.00015326211
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 6.82039522e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 320
+delta_t: 60
+time: 18191.5 s (5:03:11.535000)
+
+
+  0 Residual function norm 0.00034673271
+    0 Residual function norm 0.00034673271
+    1 Residual function norm 0.00015084671
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 6.95513932e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 321
+delta_t: 60
+time: 18251.5 s (5:04:11.535000)
+
+
+  0 Residual function norm 0.00034106177
+    0 Residual function norm 0.00034106177
+    1 Residual function norm 0.00014753253
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 7.11956234e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 322
+delta_t: 60
+time: 18311.5 s (5:05:11.535000)
+
+
+  0 Residual function norm 0.00033150397
+    0 Residual function norm 0.00033150397
+    1 Residual function norm 0.00014516274
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 7.25019567e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 323
+delta_t: 60
+time: 18371.5 s (5:06:11.535000)
+
+
+  0 Residual function norm 0.00032628309
+    0 Residual function norm 0.00032628309
+    1 Residual function norm 0.00014210808
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 7.41044626e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 324
+delta_t: 60
+time: 18431.5 s (5:07:11.535000)
+
+
+  0 Residual function norm 0.00031726888
+    0 Residual function norm 0.00031726888
+    1 Residual function norm 0.00013978972
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 7.53675567e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 325
+delta_t: 60
+time: 18491.5 s (5:08:11.535000)
+
+
+  0 Residual function norm 0.00031242031
+    0 Residual function norm 0.00031242031
+    1 Residual function norm 0.00013694921
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 7.69228743e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 326
+delta_t: 60
+time: 18551.5 s (5:09:11.535000)
+
+
+  0 Residual function norm 0.00030381052
+    0 Residual function norm 0.00030381052
+    1 Residual function norm 0.00013403351
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 7.77953817e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 327
+delta_t: 60
+time: 18611.5 s (5:10:11.535000)
+
+
+  0 Residual function norm 0.00029874581
+    0 Residual function norm 0.00029874581
+    1 Residual function norm 0.00013353351
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 7.97026548e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 328
+delta_t: 60
+time: 18671.5 s (5:11:11.535000)
+
+
+  0 Residual function norm 0.00029246749
+    0 Residual function norm 0.00029246749
+    1 Residual function norm 0.00012901159
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 8.07105739e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 329
+delta_t: 60
+time: 18731.5 s (5:12:11.535000)
+
+
+  0 Residual function norm 0.00028655729
+    0 Residual function norm 0.00028655729
+    1 Residual function norm 0.00012739008
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 8.20894594e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 330
+delta_t: 60
+time: 18791.5 s (5:13:11.535000)
+
+
+  0 Residual function norm 0.00027929684
+    0 Residual function norm 0.00027929684
+    1 Residual function norm 0.00012567582
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 8.33601343e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 331
+delta_t: 60
+time: 18851.5 s (5:14:11.535000)
+
+
+  0 Residual function norm 0.00027466124
+    0 Residual function norm 0.00027466124
+    1 Residual function norm 0.00012243855
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 8.41070792e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 332
+delta_t: 60
+time: 18911.5 s (5:15:11.535000)
+
+
+  0 Residual function norm 0.00027086025
+    0 Residual function norm 0.00027086025
+    1 Residual function norm 0.00012191681
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 8.57457509e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 333
+delta_t: 60
+time: 18971.5 s (5:16:11.535000)
+
+
+  0 Residual function norm 0.00026279373
+    0 Residual function norm 0.00026279373
+    1 Residual function norm 0.00011907379
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 8.70774247e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 334
+delta_t: 60
+time: 19031.5 s (5:17:11.535000)
+
+
+  0 Residual function norm 0.0002583366
+    0 Residual function norm 0.0002583366
+    1 Residual function norm 0.00011597917
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 8.78325269e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 335
+delta_t: 60
+time: 19091.5 s (5:18:11.535000)
+
+
+  0 Residual function norm 0.00025457127
+    0 Residual function norm 0.00025457127
+    1 Residual function norm 0.00011534527
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 8.93347521e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 336
+delta_t: 60
+time: 19151.5 s (5:19:11.535000)
+
+
+  0 Residual function norm 0.00024736545
+    0 Residual function norm 0.00024736545
+    1 Residual function norm 0.00011285378
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 9.05640464e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 337
+delta_t: 60
+time: 19211.5 s (5:20:11.535000)
+
+
+  0 Residual function norm 0.00024325543
+    0 Residual function norm 0.00024325543
+    1 Residual function norm 0.00011000655
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 9.12709861e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 338
+delta_t: 60
+time: 19271.5 s (5:21:11.535000)
+
+
+  0 Residual function norm 0.0002397838
+    0 Residual function norm 0.0002397838
+    1 Residual function norm 0.00010936866
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 9.26876597e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 339
+delta_t: 60
+time: 19331.5 s (5:22:11.535000)
+
+
+  0 Residual function norm 0.00023296629
+    0 Residual function norm 0.00023296629
+    1 Residual function norm 0.00010625596
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 9.34849702e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 340
+delta_t: 60
+time: 19391.5 s (5:23:11.535000)
+
+
+  0 Residual function norm 0.00022858679
+    0 Residual function norm 0.00022858679
+    1 Residual function norm 0.00010568841
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 9.45139517e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 341
+delta_t: 60
+time: 19451.5 s (5:24:11.535000)
+
+
+  0 Residual function norm 0.00022720059
+    0 Residual function norm 0.00022720059
+    1 Residual function norm 0.00010369097
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 9.59884313e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 342
+delta_t: 60
+time: 19511.5 s (5:25:11.535000)
+
+
+  0 Residual function norm 0.00022010481
+    0 Residual function norm 0.00022010481
+    1 Residual function norm 0.00010074415
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 9.67772227e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 343
+delta_t: 60
+time: 19571.5 s (5:26:11.535000)
+
+
+  0 Residual function norm 0.00021532666
+    0 Residual function norm 0.00021532666
+    1 Residual function norm 9.9254264e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 9.72985331e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 344
+delta_t: 60
+time: 19631.5 s (5:27:11.535000)
+
+
+  0 Residual function norm 0.00021335415
+    0 Residual function norm 0.00021335415
+    1 Residual function norm 9.9762302e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 9.89582757e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 345
+delta_t: 60
+time: 19691.5 s (5:28:11.535000)
+
+
+  0 Residual function norm 0.00020872707
+    0 Residual function norm 0.00020872707
+    1 Residual function norm 9.5576203e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 9.98204060e+01 kg
+
+######################### NEW TIME-STEP ##########################
+index: 346
+delta_t: 60
+time: 19751.5 s (5:29:11.535000)
+
+
+  0 Residual function norm 0.00020367575
+    0 Residual function norm 0.00020367575
+    1 Residual function norm 9.4179627e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00348450e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 347
+delta_t: 60
+time: 19811.5 s (5:30:11.535000)
+
+
+  0 Residual function norm 0.0001996079
+    0 Residual function norm 0.0001996079
+    1 Residual function norm 9.2787112e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.00770426e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 348
+delta_t: 60
+time: 19871.5 s (5:31:11.535000)
+
+
+  0 Residual function norm 0.000199254
+    0 Residual function norm 0.000199254
+    1 Residual function norm 9.4484186e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.02560228e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 349
+delta_t: 60
+time: 19931.5 s (5:32:11.535000)
+
+
+  0 Residual function norm 0.0001937858
+    0 Residual function norm 0.0001937858
+    1 Residual function norm 8.9350129e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03464248e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 350
+delta_t: 60
+time: 19991.5 s (5:33:11.535000)
+
+
+  0 Residual function norm 0.00018899226
+    0 Residual function norm 0.00018899226
+    1 Residual function norm 8.7935821e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.03990052e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 351
+delta_t: 60
+time: 20051.5 s (5:34:11.535000)
+
+
+  0 Residual function norm 0.00018520083
+    0 Residual function norm 0.00018520083
+    1 Residual function norm 8.6686593e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.04390220e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 352
+delta_t: 60
+time: 20111.5 s (5:35:11.535000)
+
+
+  0 Residual function norm 0.00018442938
+    0 Residual function norm 0.00018442938
+    1 Residual function norm 8.686455e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.05637511e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 353
+delta_t: 60
+time: 20171.5 s (5:36:11.535000)
+
+
+  0 Residual function norm 0.00017920072
+    0 Residual function norm 0.00017920072
+    1 Residual function norm 8.4950925e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.06786723e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 354
+delta_t: 60
+time: 20231.5 s (5:37:11.535000)
+
+
+  0 Residual function norm 0.00017670361
+    0 Residual function norm 0.00017670361
+    1 Residual function norm 8.2125272e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.07405180e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 355
+delta_t: 60
+time: 20291.5 s (5:38:11.535000)
+
+
+  0 Residual function norm 0.00017247561
+    0 Residual function norm 0.00017247561
+    1 Residual function norm 8.0987262e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.07812034e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 356
+delta_t: 60
+time: 20351.5 s (5:39:11.535000)
+
+
+  0 Residual function norm 0.00017130902
+    0 Residual function norm 0.00017130902
+    1 Residual function norm 8.111462e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.08963867e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 357
+delta_t: 60
+time: 20411.5 s (5:40:11.535000)
+
+
+  0 Residual function norm 0.00016628017
+    0 Residual function norm 0.00016628017
+    1 Residual function norm 7.8285956e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.09604035e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 358
+delta_t: 60
+time: 20471.5 s (5:41:11.535000)
+
+
+  0 Residual function norm 0.0001634467
+    0 Residual function norm 0.0001634467
+    1 Residual function norm 7.811447e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.10442150e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 359
+delta_t: 60
+time: 20531.5 s (5:42:11.535000)
+
+
+  0 Residual function norm 0.0001614819
+    0 Residual function norm 0.0001614819
+    1 Residual function norm 7.5733251e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.10936850e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 360
+delta_t: 60
+time: 20591.5 s (5:43:11.535000)
+
+
+  0 Residual function norm 0.00015780288
+    0 Residual function norm 0.00015780288
+    1 Residual function norm 7.4630152e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.11296387e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 361
+delta_t: 60
+time: 20651.5 s (5:44:11.535000)
+
+
+  0 Residual function norm 0.00015819106
+    0 Residual function norm 0.00015819106
+    1 Residual function norm 7.6078117e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.12562000e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 362
+delta_t: 60
+time: 20711.5 s (5:45:11.535000)
+
+
+  0 Residual function norm 0.00015249691
+    0 Residual function norm 0.00015249691
+    1 Residual function norm 7.2253156e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.13231677e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 363
+delta_t: 60
+time: 20771.5 s (5:46:11.535000)
+
+
+  0 Residual function norm 0.00014952554
+    0 Residual function norm 0.00014952554
+    1 Residual function norm 7.1043097e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.13653107e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 364
+delta_t: 60
+time: 20831.5 s (5:47:11.535000)
+
+
+  0 Residual function norm 0.00014732689
+    0 Residual function norm 0.00014732689
+    1 Residual function norm 7.128187e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.14432195e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 365
+delta_t: 60
+time: 20891.5 s (5:48:11.535000)
+
+
+  0 Residual function norm 0.00014573868
+    0 Residual function norm 0.00014573868
+    1 Residual function norm 6.876627e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.14892236e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 366
+delta_t: 60
+time: 20951.5 s (5:49:11.535000)
+
+
+  0 Residual function norm 0.00014506595
+    0 Residual function norm 0.00014506595
+    1 Residual function norm 6.9800304e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.16046666e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 367
+delta_t: 60
+time: 21011.5 s (5:50:11.535000)
+
+
+  0 Residual function norm 0.00013979564
+    0 Residual function norm 0.00013979564
+    1 Residual function norm 6.6619259e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.16640654e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 368
+delta_t: 60
+time: 21071.5 s (5:51:11.535000)
+
+
+  0 Residual function norm 0.0001371528
+    0 Residual function norm 0.0001371528
+    1 Residual function norm 6.560777e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.17009775e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 369
+delta_t: 60
+time: 21131.5 s (5:52:11.535000)
+
+
+  0 Residual function norm 0.00013490266
+    0 Residual function norm 0.00013490266
+    1 Residual function norm 6.4723949e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.17308348e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 370
+delta_t: 60
+time: 21191.5 s (5:53:11.535000)
+
+
+  0 Residual function norm 0.00013280168
+    0 Residual function norm 0.00013280168
+    1 Residual function norm 6.376288e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.17595039e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 371
+delta_t: 60
+time: 21251.5 s (5:54:11.535000)
+
+
+  0 Residual function norm 0.00013122513
+    0 Residual function norm 0.00013122513
+    1 Residual function norm 6.4211124e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.18349794e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 372
+delta_t: 60
+time: 21311.5 s (5:55:11.535000)
+
+
+  0 Residual function norm 0.00013387776
+    0 Residual function norm 0.00013387776
+    1 Residual function norm 6.5184712e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.19718381e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 373
+delta_t: 60
+time: 21371.5 s (5:56:11.535000)
+
+
+  0 Residual function norm 0.00012732183
+    0 Residual function norm 0.00012732183
+    1 Residual function norm 6.072619e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.20363062e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 374
+delta_t: 60
+time: 21431.5 s (5:57:11.535000)
+
+
+  0 Residual function norm 0.0001242704
+    0 Residual function norm 0.0001242704
+    1 Residual function norm 5.9725054e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.20712913e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 375
+delta_t: 60
+time: 21491.5 s (5:58:11.535000)
+
+
+  0 Residual function norm 0.00012212976
+    0 Residual function norm 0.00012212976
+    1 Residual function norm 5.9003053e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.20970982e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 376
+delta_t: 60
+time: 21551.5 s (5:59:11.535000)
+
+
+  0 Residual function norm 0.00012029978
+    0 Residual function norm 0.00012029978
+    1 Residual function norm 5.817587e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.21215830e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 377
+delta_t: 60
+time: 21611.5 s (6:00:11.535000)
+
+
+  0 Residual function norm 0.00011852863
+    0 Residual function norm 0.00011852863
+    1 Residual function norm 5.7306533e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.21469117e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 378
+delta_t: 60
+time: 21671.5 s (6:01:11.535000)
+
+
+  0 Residual function norm 0.00011718835
+    0 Residual function norm 0.00011718835
+    1 Residual function norm 5.7736598e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.22148805e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 379
+delta_t: 60
+time: 21731.5 s (6:02:11.535000)
+
+
+  0 Residual function norm 0.00012088528
+    0 Residual function norm 0.00012088528
+    1 Residual function norm 5.9936036e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.23507136e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 380
+delta_t: 60
+time: 21791.5 s (6:03:11.535000)
+
+
+  0 Residual function norm 0.00011418483
+    0 Residual function norm 0.00011418483
+    1 Residual function norm 5.4784457e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.24133109e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 381
+delta_t: 60
+time: 21851.5 s (6:04:11.535000)
+
+
+  0 Residual function norm 0.0001113217
+    0 Residual function norm 0.0001113217
+    1 Residual function norm 5.3782401e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.24458599e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 382
+delta_t: 60
+time: 21911.5 s (6:05:11.535000)
+
+
+  0 Residual function norm 0.00010935828
+    0 Residual function norm 0.00010935828
+    1 Residual function norm 5.317658e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.24688915e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 383
+delta_t: 60
+time: 21971.5 s (6:06:11.535000)
+
+
+  0 Residual function norm 0.0001077615
+    0 Residual function norm 0.0001077615
+    1 Residual function norm 5.2470063e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.24904343e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 384
+delta_t: 60
+time: 22031.5 s (6:07:11.535000)
+
+
+  0 Residual function norm 0.00010625299
+    0 Residual function norm 0.00010625299
+    1 Residual function norm 5.17166e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.25127684e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 385
+delta_t: 60
+time: 22091.5 s (6:08:11.535000)
+
+
+  0 Residual function norm 0.00010472778
+    0 Residual function norm 0.00010472778
+    1 Residual function norm 5.0967175e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.25360263e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 386
+delta_t: 60
+time: 22151.5 s (6:09:11.535000)
+
+
+  0 Residual function norm 0.00010805266
+    0 Residual function norm 0.00010805266
+    1 Residual function norm 5.5947467e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.26876882e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 387
+delta_t: 60
+time: 22211.5 s (6:10:11.535000)
+
+
+  0 Residual function norm 0.00010376638
+    0 Residual function norm 0.00010376638
+    1 Residual function norm 4.9568462e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.27563080e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 388
+delta_t: 60
+time: 22271.5 s (6:11:11.535000)
+
+
+  0 Residual function norm 0.00010050846
+    0 Residual function norm 0.00010050846
+    1 Residual function norm 4.8570092e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.27887816e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 389
+delta_t: 60
+time: 22331.5 s (6:12:11.535000)
+
+
+  0 Residual function norm 9.8340965e-05
+    0 Residual function norm 9.8340965e-05
+    1 Residual function norm 4.8094239e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.28090601e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 390
+delta_t: 60
+time: 22391.5 s (6:13:11.535000)
+
+
+  0 Residual function norm 9.6939774e-05
+    0 Residual function norm 9.6939774e-05
+    1 Residual function norm 4.7512099e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.28271676e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 391
+delta_t: 60
+time: 22451.5 s (6:14:11.535000)
+
+
+  0 Residual function norm 9.5683778e-05
+    0 Residual function norm 9.5683778e-05
+    1 Residual function norm 4.686628e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.28461996e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 392
+delta_t: 60
+time: 22511.5 s (6:15:11.535000)
+
+
+  0 Residual function norm 9.4405141e-05
+    0 Residual function norm 9.4405141e-05
+    1 Residual function norm 4.6216029e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.28664758e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 393
+delta_t: 60
+time: 22571.5 s (6:16:11.535000)
+
+
+  0 Residual function norm 9.3096694e-05
+    0 Residual function norm 9.3096694e-05
+    1 Residual function norm 4.5581227e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.28875290e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 394
+delta_t: 60
+time: 22631.5 s (6:17:11.535000)
+
+
+  0 Residual function norm 9.705072e-05
+    0 Residual function norm 9.705072e-05
+    1 Residual function norm 4.9740594e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.29971252e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 395
+delta_t: 60
+time: 22691.5 s (6:18:11.535000)
+
+
+  0 Residual function norm 9.2169767e-05
+    0 Residual function norm 9.2169767e-05
+    1 Residual function norm 4.6537327e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.30937925e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 396
+delta_t: 60
+time: 22751.5 s (6:19:11.535000)
+
+
+  0 Residual function norm 9.0991271e-05
+    0 Residual function norm 9.0991271e-05
+    1 Residual function norm 4.3547055e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.31368162e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 397
+delta_t: 60
+time: 22811.5 s (6:20:11.535000)
+
+
+  0 Residual function norm 8.8161538e-05
+    0 Residual function norm 8.8161538e-05
+    1 Residual function norm 4.3064926e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.31582397e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 398
+delta_t: 60
+time: 22871.5 s (6:21:11.535000)
+
+
+  0 Residual function norm 8.6447526e-05
+    0 Residual function norm 8.6447526e-05
+    1 Residual function norm 4.2627713e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.31736544e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 399
+delta_t: 60
+time: 22931.5 s (6:22:11.535000)
+
+
+  0 Residual function norm 8.5367149e-05
+    0 Residual function norm 8.5367149e-05
+    1 Residual function norm 4.2104247e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.31890487e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 400
+delta_t: 60
+time: 22991.5 s (6:23:11.535000)
+
+
+  0 Residual function norm 8.4337242e-05
+    0 Residual function norm 8.4337242e-05
+    1 Residual function norm 4.1554794e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.32058584e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 401
+delta_t: 60
+time: 23051.5 s (6:24:11.535000)
+
+
+  0 Residual function norm 8.3267647e-05
+    0 Residual function norm 8.3267647e-05
+    1 Residual function norm 4.1012239e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.32238627e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 402
+delta_t: 60
+time: 23111.5 s (6:25:11.535000)
+
+
+  0 Residual function norm 8.2175867e-05
+    0 Residual function norm 8.2175867e-05
+    1 Residual function norm 4.0484731e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.32424997e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 403
+delta_t: 60
+time: 23171.5 s (6:26:11.535000)
+
+
+  0 Residual function norm 8.7018424e-05
+    0 Residual function norm 8.7018424e-05
+    1 Residual function norm 4.5459884e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.33495604e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 404
+delta_t: 60
+time: 23231.5 s (6:27:11.535000)
+
+
+  0 Residual function norm 8.1361108e-05
+    0 Residual function norm 8.1361108e-05
+    1 Residual function norm 3.9866082e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.34004497e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 405
+delta_t: 60
+time: 23291.5 s (6:28:11.535000)
+
+
+  0 Residual function norm 8.0124065e-05
+    0 Residual function norm 8.0124065e-05
+    1 Residual function norm 4.0724206e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.34698580e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 406
+delta_t: 60
+time: 23351.5 s (6:29:11.535000)
+
+
+  0 Residual function norm 7.9376483e-05
+    0 Residual function norm 7.9376483e-05
+    1 Residual function norm 3.8386097e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.35015146e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 407
+delta_t: 60
+time: 23411.5 s (6:30:11.535000)
+
+
+  0 Residual function norm 7.7054498e-05
+    0 Residual function norm 7.7054498e-05
+    1 Residual function norm 3.794997e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.35182594e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 408
+delta_t: 60
+time: 23471.5 s (6:31:11.535000)
+
+
+  0 Residual function norm 7.5694898e-05
+    0 Residual function norm 7.5694898e-05
+    1 Residual function norm 3.7559155e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.35312730e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 409
+delta_t: 60
+time: 23531.5 s (6:32:11.535000)
+
+
+  0 Residual function norm 7.483483e-05
+    0 Residual function norm 7.483483e-05
+    1 Residual function norm 3.7122684e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.35447463e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 410
+delta_t: 60
+time: 23591.5 s (6:33:11.535000)
+
+
+  0 Residual function norm 7.3992659e-05
+    0 Residual function norm 7.3992659e-05
+    1 Residual function norm 3.6673593e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.35595433e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 411
+delta_t: 60
+time: 23651.5 s (6:34:11.535000)
+
+
+  0 Residual function norm 7.3116368e-05
+    0 Residual function norm 7.3116368e-05
+    1 Residual function norm 3.6231171e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.35753540e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 412
+delta_t: 60
+time: 23711.5 s (6:35:11.535000)
+
+
+  0 Residual function norm 7.2225036e-05
+    0 Residual function norm 7.2225036e-05
+    1 Residual function norm 3.5800319e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.35916719e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 413
+delta_t: 60
+time: 23771.5 s (6:36:11.535000)
+
+
+  0 Residual function norm 7.7867937e-05
+    0 Residual function norm 7.7867937e-05
+    1 Residual function norm 4.1496879e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.36952900e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 414
+delta_t: 60
+time: 23831.5 s (6:37:11.535000)
+
+
+  0 Residual function norm 7.2090917e-05
+    0 Residual function norm 7.2090917e-05
+    1 Residual function norm 3.546685e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.37434169e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 415
+delta_t: 60
+time: 23891.5 s (6:38:11.535000)
+
+
+  0 Residual function norm 7.0212448e-05
+    0 Residual function norm 7.0212448e-05
+    1 Residual function norm 3.4474358e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.37675754e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 416
+delta_t: 60
+time: 23951.5 s (6:39:11.535000)
+
+
+  0 Residual function norm 6.8839762e-05
+    0 Residual function norm 6.8839762e-05
+    1 Residual function norm 3.4172893e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.37831832e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 417
+delta_t: 60
+time: 24011.5 s (6:40:11.535000)
+
+
+  0 Residual function norm 0.17758987
+    0 Residual function norm 0.17758987
+    1 Residual function norm 0.037277799
+    2 Residual function norm 0.0022534503
+    3 Residual function norm 0.00060076832
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.40399550e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 418
+delta_t: 60
+time: 24071.5 s (6:41:11.535000)
+
+
+  0 Residual function norm 0.038723368
+    0 Residual function norm 0.038723368
+    1 Residual function norm 0.009041864
+    2 Residual function norm 0.0010061333
+    3 Residual function norm 0.00026107796
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.40549407e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 419
+delta_t: 60
+time: 24131.5 s (6:42:11.535000)
+
+
+  0 Residual function norm 0.0098045869
+    0 Residual function norm 0.0098045869
+    1 Residual function norm 0.0015078495
+    2 Residual function norm 0.0003063984
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.41249539e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 420
+delta_t: 60
+time: 24191.5 s (6:43:11.535000)
+
+
+  0 Residual function norm 0.0022337326
+    0 Residual function norm 0.0022337326
+    1 Residual function norm 0.00045574032
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.39430083e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 421
+delta_t: 60
+time: 24251.5 s (6:44:11.535000)
+
+
+  0 Residual function norm 0.0010003021
+    0 Residual function norm 0.0010003021
+    1 Residual function norm 0.0002536251
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.38444777e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 422
+delta_t: 60
+time: 24311.5 s (6:45:11.535000)
+
+
+  0 Residual function norm 0.00059762069
+    0 Residual function norm 0.00059762069
+    1 Residual function norm 0.00021467735
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.37518096e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 423
+delta_t: 60
+time: 24371.5 s (6:46:11.535000)
+
+
+  0 Residual function norm 0.00047627213
+    0 Residual function norm 0.00047627213
+    1 Residual function norm 0.00017673276
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.39658546e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 424
+delta_t: 60
+time: 24431.5 s (6:47:11.535000)
+
+
+  0 Residual function norm 0.00044338535
+    0 Residual function norm 0.00044338535
+    1 Residual function norm 0.00019594507
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.36158304e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 425
+delta_t: 60
+time: 24491.5 s (6:48:11.535000)
+
+
+  0 Residual function norm 0.00039081692
+    0 Residual function norm 0.00039081692
+    1 Residual function norm 0.00014895896
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.35827943e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 426
+delta_t: 60
+time: 24551.5 s (6:49:11.535000)
+
+
+  0 Residual function norm 0.00035686861
+    0 Residual function norm 0.00035686861
+    1 Residual function norm 0.00013503289
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.35785480e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 427
+delta_t: 60
+time: 24611.5 s (6:50:11.535000)
+
+
+  0 Residual function norm 0.00032380464
+    0 Residual function norm 0.00032380464
+    1 Residual function norm 0.00012728627
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.35240003e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 428
+delta_t: 60
+time: 24671.5 s (6:51:11.535000)
+
+
+  0 Residual function norm 0.00029849061
+    0 Residual function norm 0.00029849061
+    1 Residual function norm 0.0001122451
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.36725540e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 429
+delta_t: 60
+time: 24731.5 s (6:52:11.535000)
+
+
+  0 Residual function norm 0.00028042409
+    0 Residual function norm 0.00028042409
+    1 Residual function norm 0.00012157992
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.34854121e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 430
+delta_t: 60
+time: 24791.5 s (6:53:11.535000)
+
+
+  0 Residual function norm 0.00025639192
+    0 Residual function norm 0.00025639192
+    1 Residual function norm 9.9402968e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.34686991e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 431
+delta_t: 60
+time: 24851.5 s (6:54:11.535000)
+
+
+  0 Residual function norm 0.00023926081
+    0 Residual function norm 0.00023926081
+    1 Residual function norm 9.2285656e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.34843653e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 432
+delta_t: 60
+time: 24911.5 s (6:55:11.535000)
+
+
+  0 Residual function norm 0.0002229423
+    0 Residual function norm 0.0002229423
+    1 Residual function norm 8.5382026e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.34992149e+02 kg
+
+######################### NEW TIME-STEP ##########################
+index: 433
+delta_t: 60
+time: 24971.5 s (6:56:11.535000)
+
+
+  0 Residual function norm 0.00020926553
+    0 Residual function norm 0.00020926553
+    1 Residual function norm 8.3384251e-05
+Nonlinear solve convergence status is CONVERGED_FNORM_ABS
+total mass error 1.34728303e+02 kg
+
+##################################################################
+#################### Convergence Statistics ######################
+##################################################################
+
+  Number of threads: 8
+  Line search mode: backtracking
+  Nonlinear preconditioner enabled: True
+  Total number of timesteps: 434
+  Total number of timestep breaks: 2
+  Average delta_t: 57.7
+  Final simulated time: 6:57:11.535000
+  Final computational time: 0:00:12.059986
+  Simulated vs computational ratio: 2.08e+03
+
+##################################################################
+##################################################################
+##################################################################
+

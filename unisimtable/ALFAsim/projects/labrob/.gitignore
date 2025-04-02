@@ -1,0 +1,8 @@
+*.user
+*__pycache__*
+*/qTotem/web/templates/users/*.html
+
+*/build
+build*/
+.venv/
+.idea/

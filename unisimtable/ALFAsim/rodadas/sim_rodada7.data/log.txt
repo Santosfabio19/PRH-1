@@ -1,0 +1,13 @@
+2025-03-20 18:13:07,696  run_simulation.py          485 INFO     Reading study
+2025-03-20 18:13:10,497  license.py                 137 INFO     Acquiring licenses for C:\Users\fabio\projects\PRH-1\unisimtable\ALFAsim\rodadas\sim_rodada7.data:None
+2025-03-20 18:13:10,658  license.py                 149 INFO     Licenses for C:\Users\fabio\projects\PRH-1\unisimtable\ALFAsim\rodadas\sim_rodada7.data:None acquired
+2025-03-20 18:13:10,717  initialization.py           20 INFO     Initializing libraries
+2025-03-20 18:13:10,718  initialization.py           31 INFO         Initializing PETSc
+2025-03-20 18:13:10,719  initialization.py           41 INFO         Configuring MKL
+2025-03-20 18:13:10,719  initialization.py           44 INFO         Configuring numpy
+2025-03-20 18:13:10,772  initialization.py           49 INFO         Clearing floating point errors
+2025-03-20 18:13:10,779  run_simulation.py          549 INFO     Creating simulation state
+2025-03-20 18:13:11,721  run_simulation.py          563 INFO     Creating output definition
+2025-03-20 18:13:11,721  run_simulation.py          566 INFO     Running simulation
+2025-03-20 18:13:26,040  time_stepper.py            303 INFO     Simulation finished: status=FINISHED, simulated time=25055.503935674813s, elapsed time (process)=14.25s
+2025-03-20 18:13:26,060  main.py                    202 INFO     Exiting simulation process

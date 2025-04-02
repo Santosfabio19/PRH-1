@@ -1,0 +1,40 @@
+2025-03-27 20:50:02,088  run_simulation.py          485 INFO     Reading study
+2025-03-27 20:50:03,904  license.py                 137 INFO     Acquiring licenses for C:\Users\fabio\projects\PRH-1\unisimtable\ALFAsim\rodadas\sim_rodada_menos stat.data:None
+2025-03-27 20:50:04,065  license.py                 149 INFO     Licenses for C:\Users\fabio\projects\PRH-1\unisimtable\ALFAsim\rodadas\sim_rodada_menos stat.data:None acquired
+2025-03-27 20:50:04,088  initialization.py           20 INFO     Initializing libraries
+2025-03-27 20:50:04,088  initialization.py           31 INFO         Initializing PETSc
+2025-03-27 20:50:04,090  initialization.py           41 INFO         Configuring MKL
+2025-03-27 20:50:04,090  initialization.py           44 INFO         Configuring numpy
+2025-03-27 20:50:04,090  initialization.py           49 INFO         Clearing floating point errors
+2025-03-27 20:50:04,096  run_simulation.py          549 INFO     Creating simulation state
+2025-03-27 20:50:04,861  network_creation.py        667 INFO     Error updating initial conditions, please review it!
+2025-03-27 20:50:04,861  main.py                     72 ERROR    An error happened!
+Traceback (most recent call last):
+  File "alfasim_calc\network\builder\network_creation.py", line 665, in _create_network
+RuntimeError: invalid `j` (could be nan or inf)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "alfasim_calc\main.py", line 56, in run_simulation_and_handle_unhandled_errors
+  File "alfasim_calc\run_simulation.py", line 496, in run_simulation_from_sim_facade
+  File "alfasim_calc\run_simulation.py", line 560, in _run_simulation_from_study
+  File "alfasim_calc\network\builder\network_creation.py", line 728, in build_calc_model_from_study
+  File "alfasim_calc\network\builder\network_creation.py", line 668, in _create_network
+alfasim_core.communication.errors.UserVisibleError: Error updating initial conditions, please review it!
+2025-03-27 20:50:04,889  main.py                    197 ERROR    unhandled error at main
+Traceback (most recent call last):
+  File "alfasim_calc\network\builder\network_creation.py", line 665, in _create_network
+RuntimeError: invalid `j` (could be nan or inf)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "alfasim_calc\main.py", line 194, in main
+  File "alfasim_calc\main.py", line 56, in run_simulation_and_handle_unhandled_errors
+  File "alfasim_calc\run_simulation.py", line 496, in run_simulation_from_sim_facade
+  File "alfasim_calc\run_simulation.py", line 560, in _run_simulation_from_study
+  File "alfasim_calc\network\builder\network_creation.py", line 728, in build_calc_model_from_study
+  File "alfasim_calc\network\builder\network_creation.py", line 668, in _create_network
+alfasim_core.communication.errors.UserVisibleError: Error updating initial conditions, please review it!
+2025-03-27 20:50:04,890  main.py                    202 INFO     Exiting simulation process

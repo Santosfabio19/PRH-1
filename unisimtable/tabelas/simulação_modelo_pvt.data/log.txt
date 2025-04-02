@@ -1,0 +1,13 @@
+2025-03-17 16:29:18,720  run_simulation.py          485 INFO     Reading study
+2025-03-17 16:29:21,705  license.py                 137 INFO     Acquiring licenses for C:\Users\fabio\projects\PRH-1\unisimtable\tabelas\simulação_modelo_pvt.data:None
+2025-03-17 16:29:22,341  license.py                 149 INFO     Licenses for C:\Users\fabio\projects\PRH-1\unisimtable\tabelas\simulação_modelo_pvt.data:None acquired
+2025-03-17 16:29:22,380  initialization.py           20 INFO     Initializing libraries
+2025-03-17 16:29:22,380  initialization.py           31 INFO         Initializing PETSc
+2025-03-17 16:29:22,385  initialization.py           41 INFO         Configuring MKL
+2025-03-17 16:29:22,385  initialization.py           44 INFO         Configuring numpy
+2025-03-17 16:29:22,401  initialization.py           49 INFO         Clearing floating point errors
+2025-03-17 16:29:22,405  run_simulation.py          549 INFO     Creating simulation state
+2025-03-17 16:29:23,471  run_simulation.py          563 INFO     Creating output definition
+2025-03-17 16:29:23,471  run_simulation.py          566 INFO     Running simulation
+2025-03-17 16:39:09,883  time_stepper.py            303 INFO     Simulation finished: status=FINISHED, simulated time=15500.023999956768s, elapsed time (process)=586.3119999999763s
+2025-03-17 16:39:09,922  main.py                    202 INFO     Exiting simulation process

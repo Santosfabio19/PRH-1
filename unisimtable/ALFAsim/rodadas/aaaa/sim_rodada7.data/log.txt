@@ -1,0 +1,13 @@
+2025-03-20 15:53:41,391  run_simulation.py          485 INFO     Reading study
+2025-03-20 15:53:43,020  license.py                 137 INFO     Acquiring licenses for C:\Users\fabio\Documents\rodadas\aaaa\sim_rodada7.data:None
+2025-03-20 15:53:43,080  license.py                 149 INFO     Licenses for C:\Users\fabio\Documents\rodadas\aaaa\sim_rodada7.data:None acquired
+2025-03-20 15:53:43,091  initialization.py           20 INFO     Initializing libraries
+2025-03-20 15:53:43,091  initialization.py           31 INFO         Initializing PETSc
+2025-03-20 15:53:43,128  initialization.py           41 INFO         Configuring MKL
+2025-03-20 15:53:43,128  initialization.py           44 INFO         Configuring numpy
+2025-03-20 15:53:43,128  initialization.py           49 INFO         Clearing floating point errors
+2025-03-20 15:53:43,144  run_simulation.py          549 INFO     Creating simulation state
+2025-03-20 15:53:44,012  run_simulation.py          563 INFO     Creating output definition
+2025-03-20 15:53:44,012  run_simulation.py          566 INFO     Running simulation
+2025-03-20 15:53:56,154  time_stepper.py            303 INFO     Simulation finished: status=FINISHED, simulated time=25031.535s, elapsed time (process)=12.063000000023749s
+2025-03-20 15:53:56,174  main.py                    202 INFO     Exiting simulation process
