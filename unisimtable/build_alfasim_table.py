@@ -21,7 +21,7 @@ unisim = winclt.Dispatch("UnisimDesign.Application")
 
 # Abrindo o arquivo de simulação
 #file_path = r"C:\Users\fabio\Documents\GitHub\PRH-1\unisimtable\nwe_sub_separtion_isolated - change_composition.usc" # PC protec
-file_path = r"C:\Users\fabio\projects\PRH-1\unisimtable\nwe_sub_separtion_isolated - change_composition.usc"  # Pessoal 
+file_path = r"C:\Users\fabio\projects\PRH-1\unisimtable\nwe_sub_separtion_isolated.usc"  # Pessoal 
 Case = unisim.SimulationCases.Open(file_path)
 
 
@@ -60,6 +60,7 @@ y0 = [2]*5 + [0]*13 + [0]*2 + [7] + [0] + [40] + [0]
 w0 = [1e-10]*15 + [0] + [1] + [1] + [0]
 
 
+    
 
 
 
@@ -83,43 +84,53 @@ for op in main_pfd.Operations:
 # COLUMNS = (PT, TM, ROG, ROHL, DROGDP, DROHLDP, DROGDT, DROHLDT, RS, VISG, VISHL, CPG, CPHL, HG, HHL, TCG, TCHL, SIGGHL)
 
 
-P = [i for i in range(120,805,3)]   # 120,801,5    # 22 
-T = [i for i in range(40,135,3)]    # 40,131, 3  # 12 
-print(len(T))
+P = [i for i in range(10,210,10)]   # 120,801,5    # 22 
+T = [i for i in range(0,100,10)]    # 40,131, 3  # 12 
 print(len(P))
+print(len(T))
 
 
 pvt_table = []
 
-#feed_pressure = getattr(material_streams['feed'],'Pressure')
-#feed_temperature = getattr(material_streams['feed'],'Temperature')
+feed_pressure = getattr(material_streams['feed'],'Pressure')
+feed_temperature = getattr(material_streams['feed'],'Temperature')
 
-vapor_feed_pressure = getattr(material_streams['vapor_feed'],'Pressure')
-vapor_feed_temperature = getattr(material_streams['vapor_feed'],'Temperature')
+#vapor_feed_pressure = getattr(material_streams['vapor_feed'],'Pressure')
+#vapor_feed_temperature = getattr(material_streams['vapor_feed'],'Temperature')
 
-#feed_pressure.SetValue(10000)
-#feed_temperature.SetValue(100)
+feed_pressure.SetValue(10000)
+feed_temperature.SetValue(100)
 
-vapor_feed_pressure.SetValue(10000)
-vapor_feed_temperature.SetValue(100)
+#vapor_feed_pressure.SetValue(10000)
+#vapor_feed_temperature.SetValue(100)
 
-vap_enthalpy_ref = material_streams['vapor_vapor'].MassEnthalpyValue*1000
-liq_enthalpy_ref = material_streams['vapor_liquid'].MassEnthalpyValue*1000
+vap_enthalpy_ref = material_streams['vapor'].MassEnthalpyValue*1000
+liq_enthalpy_ref = material_streams['liquid'].MassEnthalpyValue*1000
 
 liquid_, vapor_, both = 0,0,0
-
-comp = material_streams['vapor_vapor'].ComponentMolarFraction()
-
+######################################################################################
+comp = material_streams['liquid'].ComponentMolarFraction()
 reorder_obj = Reorder(list_names_unisim, list(comp))
 new_data1, new_data2 = reorder_obj.reorder()
 
 
+comp_gas = material_streams['vapor'].ComponentMolarFraction()
+reorder_obj = Reorder(list_names_unisim, list(comp_gas))
+new_data_gas, new_data2_gas = reorder_obj.reorder()
+
+
+comp_feed = material_streams['feed'].ComponentMolarFraction()
+reorder_obj = Reorder(list_names_unisim, list(comp_feed))
+new_data_feed, new_data2_feed = reorder_obj.reorder()
+
 dict_composition_3 = {list_names[i]: new_data2[i] for i in range(len(new_data2))}
-#dict_composition_4 = {list_names_unisim[i]: nwe_4[i] for i in range(len(nwe_4))}
-#dict_composition_5 = {list_names_unisim[i]: comp[i] for i in range(len(comp))}
+dict_composition_4 = {list_names[i]: new_data2_gas[i] for i in range(len(new_data2_gas))}
+dict_composition_feed = {list_names[i]: new_data2_feed[i] for i in range(len(new_data2_feed))}
+
+print(dict_composition_4)
 
 
-mixture_nwe_3 = Mixture(list_of_species, dict_composition_3)
+mixture_nwe_3 = Mixture(list_of_species, dict_composition_feed)
 
 
 pinit = gc_eos_class(mixture_nwe_3, 85+273.15, 1.2e4, None, 2, -1, Aij, Bij, Cij, volumn_desviation, 'liquid')
@@ -128,27 +139,79 @@ pinit = gc_eos_class(mixture_nwe_3, 85+273.15, 1.2e4, None, 2, -1, Aij, Bij, Cij
 
 
 
-feed = material_streams['vapor_feed'].ComponentMolarFraction()
-reorder_obj = Reorder(list_names_unisim, list(feed))
-new_data1, new_data2 = reorder_obj.reorder()
+vapor_input = material_streams['vapor'].ComponentMolarFraction()
+reorder_obj = Reorder(list_names_unisim, list(vapor_input))
+new_data1, vapor_input = reorder_obj.reorder()
 
-vap_input = pinit.copy_change_x_and_conditions(40 +273.15, 801*100,None,feed,'gas')
+vap_input = pinit.copy_change_x_and_conditions(40 +273.15, 801*100,None,vapor_input,'gas')
 
-DENSITY = []
 Pbub = []
 Tm = []
 
+
+
+
+def calculate_surface_tension_Nm(x_dict, y_dict, rho_Lm, rho_Vm):
+    """
+    Calculate surface tension (σ_m) of a multicomponent mixture in N/m using Macleod-Sugden correlation.
+    Assumes ideal mixing (all λ_ij = 1) and contains parachor values internally.
+    
+    Parameters:
+        x_dict (dict): Liquid-phase mole fractions (e.g., {"CH4": 0.5, "C2H6": 0.5}).
+        y_dict (dict): Vapor-phase mole fractions (same keys as x_dict).
+        rho_Lm (float): Liquid mixture density (kgmol/m³).
+        rho_Vm (float): Vapor mixture density (kgmol/m³).
+        exponent (float): Exponent in Macleod-Sugden equation (default=4).
+    
+    Returns:
+        sigma_m (float): Surface tension (N/m).
+    """
+    # Define parachor values internally (fixed for common components)
+    parachor_dict = {
+        "CH4": 77.3, "C2H6": 108.9, "C3H8": 151.9, "iC4H10": 181.5, "nC4H10": 191.7,
+        "iC5H12": 225, "nC5H12": 233.9, "nC6H14": 271, "nC7H16": 316.7, "nC8H18": 352,
+        "nC9H20": 389.3, "nC10H22": 443.8, "nC11H24": 471, "nC12H26": 511, "nC14H30": 594.6,
+        "N2": 41, "H2O": 0, "CO2": 78, "C15+": 634.9
+    }
+    
+    #components = list(x_dict.keys())
+    n = len(x_dict)
+    
+    # 
+    #P_Lm = sum(x_dict[comp] * parachor_dict[comp] for comp in x_dict)
+    #P_Vm = sum(y_dict[comp] * parachor_dict[comp] for comp in y_dict)
+    P_Lm = sum(x_dict)
+    P_Vm = sum(y_dict)
+    
+    rho_Lm = rho_Lm# / 1000
+    rho_Vm = rho_Vm# / 1000
+
+    sigma_m_dyncm = (P_Lm * rho_Lm - P_Vm * rho_Vm) ** 4
+    sigma_m_Nm = sigma_m_dyncm * 0.001
+
+    return sigma_m_Nm
+
+
+
+
+
+P = [824]
+
+
+
 for PT in P:
     for TM in T:
-        vapor_feed_pressure.SetValue(PT*100)
-        vapor_feed_temperature.SetValue(TM)
-        mass_flow_vap = material_streams['vapor_vapor'].MassFlow()
-        mass_flow_liq = material_streams['vapor_liquid'].MassFlow()
+        feed_pressure.SetValue(PT*100)
+        feed_temperature.SetValue(TM)
+        mass_flow_vap = material_streams['vapor'].MassFlow()
+        mass_flow_liq = material_streams['liquid'].MassFlow()
         Tm.append(TM)
         
         
         if mass_flow_vap > 0 and mass_flow_liq <= 0  :
-            comp = material_streams['vapor_vapor'].ComponentMolarFraction()
+            
+            
+            comp = material_streams['vapor'].ComponentMolarFraction()
             reorder_obj = Reorder(list_names_unisim, list(comp))
             _, comp = reorder_obj.reorder()
             
@@ -168,103 +231,111 @@ for PT in P:
             
             DROGDT = vap.evaluate_drhodT()
             vap.evaluate_der_rho()
-            CPG = material_streams['vapor_vapor'].MassHeatCapacityValue*material_streams['vapor_vapor'].CpCv()*1000
-            ROG = material_streams['vapor_vapor'].MassDensityValue
-            VISG = material_streams['vapor_vapor'].Viscosity() * 10e-3 
-            TCG = material_streams['vapor_vapor'].ThermalConductivity()
-            HG = material_streams['vapor_vapor'].MassEnthalpyValue/1000-vap_enthalpy_ref
-            SEG = 100
+            CPG = material_streams['vapor'].MassHeatCapacityValue#*material_streams['vapor'].CpCv()*1000
+            ROG = material_streams['vapor'].MassDensityValue
+            VISG = material_streams['vapor'].Viscosity() * 10e-3 
+            TCG = material_streams['vapor'].ThermalConductivity()
+            HG = material_streams['vapor'].MassEnthalpyValue*1000#-vap_enthalpy_ref
+            SEG = material_streams["liquid"].SurfaceTensionValue
             ################################################
             DROHLDP = vap.evaluate_drhodP()/1000
             DROHLDT = vap.evaluate_drhodT()
-            VISHL = material_streams['vapor_vapor'].Viscosity() * 10e-3 
-            CPHL = material_streams['vapor_vapor'].MassHeatCapacityValue*material_streams['vapor_vapor'].CpCv()*1000
-            ROHL = material_streams['vapor_vapor'].MassDensityValue
-            TCHL = material_streams['vapor_vapor'].ThermalConductivity()
-            HHL = material_streams['vapor_vapor'].MassEnthalpyValue*1000-vap_enthalpy_ref
-            SIGGHL = 0.
-            SEHL = 100 
+            VISHL = material_streams['vapor'].Viscosity() * 10e-3 
+            CPHL = material_streams['vapor'].MassHeatCapacityValue#*material_streams['vapor'].CpCv()*1000
+            ROHL = material_streams['vapor'].MassDensityValue
+            TCHL = material_streams['vapor'].ThermalConductivity()
+            HHL = material_streams['vapor'].MassEnthalpyValue*1000#-vap_enthalpy_ref
+            #SIGGHL = 0.0
+            #SEHL = material_streams["vapor"].  / 1000
             vapor_ += 1 
             
         
         elif mass_flow_liq > 0 and mass_flow_vap <= 0  :
+            
+            comp = material_streams['liquid'].ComponentMolarFraction()
             reorder_obj = Reorder(list_names_unisim, list(comp))
             _, comp = reorder_obj.reorder()
             
             
             liq = pinit.copy_change_x_and_conditions(TM+273.15,PT*100,None,comp,'liquid')
             #DENSITY.append(liq.mass_rho)
-            ComMolFrac = material_streams['vapor_liquid'].ComponentMolarFraction()
+            ComMolFrac = material_streams['liquid'].ComponentMolarFraction()
             DROHLDP = liq.evaluate_drhodP()/1000
             print("Apenas Liquido")
             
             
-            solver_vap = solver_eos(vap_input)
+            solver_vap = solver_eos(liq)
             solver_vap.set_estimated_conditions(x0, y0, w0)
             Tbub = TM
-            Pbub_, _,_ = solver_vap.bubble_T(TM +273.15, 1000, y0)
+            Pbub_, _,_ = solver_vap.bubble_T(TM +273.15, 10000, y0)
             Pbub.append(Pbub_)
             
             
             DROHLDT = liq.evaluate_drhodT()
             liq.evaluate_der_rho()
-            VISHL = material_streams['vapor_liquid'].Viscosity()* 10e-3 
-            CPHL = material_streams['vapor_liquid'].MassHeatCapacityValue*material_streams['vapor_liquid'].CpCv()*1000
-            ROHL = material_streams['vapor_liquid'].MassDensityValue
-            TCHL = material_streams['vapor_liquid'].ThermalConductivity()
-            HHL = material_streams['vapor_liquid'].MassEnthalpyValue*1000-liq_enthalpy_ref
-            SIGGHL = material_streams["vapor_liquid"].SurfaceTension()
-            SEHL = 100
+            VISHL = material_streams['liquid'].Viscosity()* 10e-3 
+            CPHL = material_streams['liquid'].MassHeatCapacityValue * 1000 #*material_streams['liquid'].CpCv()*1000
+            ROHL = material_streams['liquid'].MassDensityValue
+            TCHL = material_streams['liquid'].ThermalConductivity()
+            HHL = material_streams['liquid'].MassEnthalpyValue*1000#-liq_enthalpy_ref
+            SIGGHL = 0.5
+            #SEHL = material_streams['liquid'].SurfaceTensionValue  / 1000
             ############
-            DROGDP = vap.evaluate_drhodP()/1000
-            DROGDT = vap.evaluate_drhodT()
-            vap.evaluate_der_rho()
-            VISG = material_streams['vapor_liquid'].Viscosity()*10e-2
-            CPG = material_streams['vapor_liquid'].MassHeatCapacityValue*material_streams['vapor_vapor'].CpCv()*1000
-            ROG = material_streams['vapor_liquid'].MassDensity()
-            TCG = material_streams['vapor_liquid'].ThermalConductivity()
-            HG = material_streams['vapor_liquid'].MassEnthalpyValue*1000-liq_enthalpy_ref
-            SEG = 100.0
+            DROGDP = liq.evaluate_drhodP()/1000
+            DROGDT = liq.evaluate_drhodT()
+            liq.evaluate_der_rho()
+            VISG = material_streams['liquid'].Viscosity()*10e-3
+            CPG = material_streams['liquid'].MassHeatCapacityValue * 1000#*material_streams['liquid'].CpCv()*1000
+            ROG = material_streams['liquid'].MassDensity()
+            TCG = material_streams['liquid'].ThermalConductivity()
+            HG = material_streams['liquid'].MassEnthalpyValue*1000#-liq_enthalpy_ref
+            #SEG = material_streams['liquid'].
             liquid_ += 1 
+            
+            
+            
         else:
+            comp = material_streams['vapor'].ComponentMolarFraction()
             reorder_obj = Reorder(list_names_unisim, list(comp))
             _, comp = reorder_obj.reorder()
-            vap = pinit.copy_change_x_and_conditions(TM+273.15,PT*100,None,comp,'gas')
-            DENSITY.append(vap.mass_rho)
+            vap = pinit.copy_change_x_and_conditions(TM+273.15,PT*100,None,comp,'gas') 
+            #DENSITY.append(vap.mass_rho)
             
             
             DROGDP = vap.evaluate_drhodP()/1000
             print("Vapor e Liquido")
             DROGDT = vap.evaluate_drhodT()
             vap.evaluate_der_rho()
-            VISG = material_streams['vapor_vapor'].Viscosity()*10e-2
-            CPG = material_streams['vapor_vapor'].MassHeatCapacityValue*material_streams['vapor_vapor'].CpCv()*1000
-            ROG = material_streams['vapor_vapor'].MassDensity()
-            TCG = material_streams['vapor_vapor'].ThermalConductivity()
-            HG = material_streams['vapor_vapor'].MassEnthalpyValue*1000-vap_enthalpy_ref
-            SEG = 100.0
+            VISG = material_streams['vapor'].Viscosity()*10e-3
+            CPG = material_streams['vapor'].MassHeatCapacityValue * 1000 #*material_streams['vapor'].CpCv()*1000
+            ROG = material_streams['vapor'].MassDensity()
+            TCG = material_streams['vapor'].ThermalConductivity()
+            HG = material_streams['vapor'].MassEnthalpyValue*1000#-vap_enthalpy_ref
+            #SEG = material_streams['vapor'].  / 1000
             
-            liq = pinit.copy_change_x_and_conditions(TM+273.15,PT*100,None,comp,'liquid')
+            
+            comp_liquid = material_streams['liquid'].ComponentMolarFraction()
+            liq = pinit.copy_change_x_and_conditions(TM+273.15,PT*100,None,comp_liquid,'liquid')
             
             DROHLDP = liq.evaluate_drhodP()/1000
             DROHLDT = liq.evaluate_drhodT()
             liq.evaluate_der_rho()
-            VISHL = material_streams['vapor_liquid'].Viscosity()* 10e-3 
-            CPHL = material_streams['vapor_liquid'].MassHeatCapacityValue*material_streams['vapor_liquid'].CpCv()*1000
-            ROHL = material_streams['vapor_liquid'].MassDensityValue  # Pode ser densidade molar
-            TCHL = material_streams['vapor_liquid'].ThermalConductivity()
-            HHL = (material_streams['vapor_liquid'].MassEnthalpyValue*1000-liq_enthalpy_ref) 
-            SIGGHL = material_streams["vapor_liquid"].SurfaceTension()
-            SEHL = 100.0
+            VISHL = material_streams['liquid'].Viscosity()* 10e-3 
+            CPHL = material_streams['liquid'].MassHeatCapacityValue * 1000 #*material_streams['liquid'].CpCv()*1000
+            ROHL = material_streams['liquid'].MassDensityValue  # Pode ser densidade molar
+            TCHL = material_streams['liquid'].ThermalConductivity()
+            HHL = material_streams['liquid'].MassEnthalpyValue*1000#-vap_enthalpy_ref 
+            SIGGHL = 0.5 #material_streams['liquid'].SurfaceTensionValue/1000  #calculate_surface_tension_Nm(comp,comp_liquid, material_streams["liquid"].MassDensityValue,material_streams["liquid"].MassDensityValue,)  #material_streams["liquid"].SurfaceTensionValue
+            #SEHL = material_streams["liquid"]. / 1000
             
             
             #surface_tension = material_streams["vapor_liquid"].SurfaceTension          #0.001*main_pfd.Operations.Item('V-100-2')
             both += 1 
         
         
-        
+    
         RS = mass_flow_vap/(mass_flow_vap+mass_flow_liq)
-        #rs = mass_flow_vap/rho_vap/(mass_flow_vap/rho_vap+mass_flow_liq/rho_liq)
+        #RS = mass_flow_vap/rho_vap/(mass_flow_vap/rho_vap+mass_flow_liq/rho_liq)
         
         
         #pvt_row = [Pin*100*1e3, Tin, rho_vap, rho_liq, drogdp, drohldp, drogdt, drohldt, rs, 
@@ -273,7 +344,7 @@ for PT in P:
         
         pvt_row = [PT*100*1e3,TM,ROG,ROHL,DROGDP,DROHLDP,DROGDT,DROHLDT,
                    RS,VISG,VISHL,CPG,CPHL,HG,HHL,TCG,
-                   TCHL,SIGGHL,SEG,SEHL]
+                   TCHL,SIGGHL]
             
         
         pvt_table.append(pvt_row)
@@ -284,12 +355,12 @@ for PT in P:
 # %%
 
 
-path_saida = r'C:\Users\fabio\projects\PRH-1\unisimtable\tabelas\pvt_table_32x228.tab'
+path_saida = r'C:\Users\fabio\projects\PRH-1\unisimtable\tabelas\xxxzzzzzzzzzzzxxxxx.tab'
 
 with open(path_saida, mode='w', newline='') as file:
     # Escrever o cabeçalho
      # Escrever o cabeçalho
-    columns = ["PT", "TM", "ROG", "ROHL", "DROGDP", "DROHLDP", "DROGDT", "DROHLDT", "RS", "VISG", "VISHL", "CPG", "CPHL", "HG", "HHL", "TCG", "TCHL", "SIGGHL", "SEG", "SEHL"]
+    columns = ["PT", "TM", "ROG", "ROHL", "DROGDP", "DROHLDP", "DROGDT", "DROHLDT", "RS", "VISG", "VISHL", "CPG", "CPHL", "HG", "HHL", "TCG", "TCHL", "SIGGHL"]
     COLUMNS_row = "COLUMNS = (" + ",".join(columns) + ")\n"
 
     
@@ -298,7 +369,7 @@ with open(path_saida, mode='w', newline='') as file:
     MOLES_row = "MOLES = (" + ",".join(map(str, new_data2)) + "),\\"
     MOL = critical_table[12,:]
     MOLWEIGHT_row = "MOLWEIGHT = (" + ",".join(map(str, MOL)) + ") g/mol,\\"
-    DENSITY_row = "DENSITY = (" + ",".join(map(str, DENSITY)) + ") g/cm3,\\"
+    #DENSITY_row = "DENSITY = (" + ",".join(map(str, DENSITY)) + ") g/cm3,\\"
     
     
     
@@ -309,7 +380,7 @@ with open(path_saida, mode='w', newline='') as file:
     GLR = .382991E+03  # Sm3/Sm3
     GLR_row = f"GLR = {GLR} Sm3/Sm3,\\"
     
-    STDGASDENSITY = vap.rho  # kg/m3
+    #STDGASDENSITY = vap.rho  # kg/m3
     
     STDGASDENSITY_row = f"STDGASDENSITY = {STDGASDENSITY} kg/m3,\\"
  
@@ -326,10 +397,10 @@ with open(path_saida, mode='w', newline='') as file:
     MESHTYPE = "STANDARD"
     MESHTYPE_row = f"MESHTYPE = {MESHTYPE},\\"
     
-    STDPRESSURE = 1.4444444444e+01  # ATM
-    STDPRESSURE_row = f"STDPRESSURE = {STDPRESSURE} ATM,\\"
-    PRESSURE_row = "PRESSURE = (" + ",".join(map(str, P)) + ") Bar,\\"
-    TEMPERATURE_row = "TEMPERATURE = (" + ",".join(map(str, T)) + ") C,\\"
+    STDPRESSURE = 1.4444444444e+03  # ATM
+    STDPRESSURE_row = f"STDPRESSURE = {STDPRESSURE} Pa,\\"
+    #PRESSURE_row = "PRESSURE = (" + ",".join(map(str, P)) + ") Bar,\\"
+    #TEMPERATURE_row = "TEMPERATURE = (" + ",".join(map(str, T)) + ") C,\\"
     #BUBBLEPRESSURES = T
     BUBBLEPRESSURES_row = "BUBBLEPRESSURES = (" + ",".join(map(str, Pbub)) + ") Pa,\\"
     #BUBBLETEMPERATURES = 
@@ -340,7 +411,7 @@ with open(path_saida, mode='w', newline='') as file:
     
     
     
-    PRESSURE_row = "PRESSURE = (" + ",".join(map(str, P)) + ") Pa,\\"
+    PRESSURE_row = "PRESSURE = (" + ",".join(map(str, P)) + ") Bar,\\"
     TEMPERATURE_row = "TEMPERATURE = (" + ",".join(map(str, T)) + ") C,\\"
     
     

@@ -16,8 +16,6 @@ class Reorder:
         combined = dict(zip(self.list1, self.list2))
         ordered_pairs = [(key, combined[key]) for key in self.order if key in combined]
         
-       # if not ordered_pairs:
-       #     raise ValueError("Nenhuma correspondência encontrada entre os nomes fornecidos e a ordem desejada.")
         
         new_list1, new_list2 = zip(*ordered_pairs)
         return list(new_list1), list(new_list2)

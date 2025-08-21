@@ -4,7 +4,7 @@ Created on Thu Jun 27 01:30:58 2024
 
 @author: Rodrigo Meira
 """
-from eos_database_new_resumed import *
+from eos_database import *
 from casadi import *
 from numpy import exp, log, array, roots, zeros, linalg
 from math import isnan
@@ -17,12 +17,14 @@ from numpy.linalg import svd, det
 
 class gc_eos_class:
 
-    def __init__(self, mixture, T, P, V, u, w, Aij, delta_v, phase):
+    def __init__(self, mixture, T, P, V, u, w, Aij, Bij, Cij, delta_v, phase):
         self.mixture = mixture
         self.T = T
         self.P = P
         self.V = V
         self.Aij = Aij
+        self.Bij = Bij
+        self.Cij = Cij
         self.phase = phase
         self.csi = min([y.real for y in roots(
             [u*(w+u)-w, 3*(w+u), 3, -1]) if y.imag == 0])
@@ -321,7 +323,7 @@ class gc_eos_class:
                   for i in range(len(der_sqrt_a))]
                  for j in range(len(der_sqrt_a))]
         
-        Q = A_c*array(der_A)*(1-array(self.Aij))
+        Q = A_c*array(der_A)*(1-array(self.Aij)-self.Bij*self.T-self.Cij*self.T**2)
         
         x = array(self.mixture.x)
         
@@ -336,7 +338,7 @@ class gc_eos_class:
                       for i in range(len(self.mixture.x))]
                      for j in range(len(self.mixture.x))]
 
-        Q = A_c*array(der_sec_A)*(1-array(self.Aij))
+        Q = A_c*array(der_sec_A)*(1-array(self.Aij)-self.Bij*self.T-self.Cij*self.T**2)
 
         x = array(self.mixture.x)
 
@@ -346,7 +348,7 @@ class gc_eos_class:
 
         self.evaluate_a()
 
-        self.Q = array([[(self.a[i]*self.a[j])**0.5*(1-self.Aij[i][j]) for i in range(len(self.a))]
+        self.Q = array([[(self.a[i]*self.a[j])**0.5*(1-self.Aij[i][j]-self.Bij[i][j]*self.T-self.Cij[i][j]*self.T**2) for i in range(len(self.a))]
                         for j in range(len(self.a))])
         x = array(self.mixture.x)
         self.a_m = x.dot(self.Q.dot(x.transpose()))
@@ -399,10 +401,6 @@ class gc_eos_class:
         # Cp_real = Cv_real - T*(dPdT)^2/dPdV
         
         self.Cpt = self.Cvt - self.T*(self.dPdT**2)/self.dPdV
-        
-    def evaluate_ci_real(self):
-        self.ci_real()
-        return self.Cvt
     
     def h_gas(self):
         
@@ -485,19 +483,16 @@ class gc_eos_class:
         rodP = rodV + rodT
         return rodP
 
-
-
-
     
     def copy_change_x_and_conditions(self, T, P, V, x, state):
 
         new_mixture = self.mixture.copy_and_change_composition(x)
 
-        return gc_eos_class(new_mixture, T, P, V, self.u, self.w, self.Aij, self.delta_v, state)
+        return gc_eos_class(new_mixture, T, P, V, self.u, self.w, self.Aij, self.Bij, self.Cij, self.delta_v, state)
 
     def copy_change_conditions(self, T, P, V, state):
 
-        return gc_eos_class(self.mixture, T, P, V, self.u, self.w, self.Aij, self.delta_v, state)
+        return gc_eos_class(self.mixture, T, P, V, self.u, self.w, self.Aij, self.Bij, self.Cij, self.delta_v, state)
     
     def evaluate_pure_fugacity(self):
         
@@ -507,4 +502,5 @@ class gc_eos_class:
         ln_phi = (self.Zeos-1) - log(self.Zeos-beta) \
                 - q/2**1.5*log((self.Zeos+beta*(1+2**.5))/(self.Zeos+beta*(1-2**.5)))
 
-        return exp(ln_phi) 
+        return exp(ln_phi)
+    
