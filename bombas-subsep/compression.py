@@ -625,6 +625,9 @@ class multi_stage_compression(compression):
         return Phi, eta, Mach, Gimp, G2, Gdif, PHI, head #, G2s, Cimp, Cdifs, C2, C2s
     
     
+
+        
+    
     def character_online(self, m, N, G01, Gi_1):
         
         self.compressor.update_speed(N)
@@ -646,7 +649,6 @@ class multi_stage_compression(compression):
             
             # Pressure Ratio
             eta, Phi, G2 = self.evaluate_pressure_ration(Gi,W,Ahid,Ahfd,Ahii,Ahfi)
-            
             Gi = G2
             
             loss += W*(1-eta)
@@ -656,20 +658,20 @@ class multi_stage_compression(compression):
             Ahfds += Ahfd
             Ahids += Ahid
             
-        PMt = self.suction_fluid.mixture.MM_m
-        Co2 = self.compressor.Ca2
+        #PMt = self.suction_fluid.mixture.MM_m
+        #Co2 = self.compressor.Ca2
         
         eta = 1 - loss/W/self.n_stages
 
         head = W*self.n_stages/9.81
         
-        Phi = G2.P/G01.P
+        #Phi = G2.P/G01.P
         
         # Mach Number in diffuser
-        Cdif = (Co2**2 + (m * Gdif.V / PMt / self.compressor.A1) ** 2) ** 0.5
-        Mach = Cdif / Gdif.sound_speed()
+        #Cdif = (Co2**2 + (m * Gdif.V / PMt / self.compressor.A1) ** 2) ** 0.5
+        #Mach = Cdif / Gdif.sound_speed()
 
-        PHI = [Ahids, Ahfds, Ahiis, Ahfis]
+        #PHI = [Ahids, Ahfds, Ahiis, Ahfis]
         
         Delta_P = G2.P-G01.P
         

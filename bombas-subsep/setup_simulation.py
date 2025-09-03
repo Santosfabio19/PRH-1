@@ -159,9 +159,15 @@ class Simulator:
         self.names_valves = list_valves
         self.Valves = {name: self.pfd.Operations[name].PercentOpen for name in list_valves}
     
-    def pumps_new_value(self,values):
+    def pumps_new_value(self,values,selected_pump):
         
-        [self.Pumps[self.names_pumps[i]]['speed'].SetValue(values[i]) for i in range(len(self.names_pumps))]
+        if selected_pump == "pump_1":
+            self.Pumps[self.names_pumps[0]]['speed'].SetValue(values[0])
+        elif selected_pump == "pump_2":
+            self.Pumps[self.names_pumps[1]]['speed'].SetValue(values[1])
+        else:
+            for i in range(len(self.names_pumps)):
+                self.Pumps[self.names_pumps[i]]['speed'].SetValue(values[i])
     
     def valves_new_value(self,values):
         
@@ -212,6 +218,8 @@ class Simulator:
         [self.inputs_pumps[name].append(self.Pumps[name]['speed'].Value) for name in self.names_pumps]
         [self.inputs_pumps[name].append(self.Pumps[name]['Efficency'].Value) for name in self.names_pumps]
         [self.inputs_pumps[name].append(self.Pumps[name]['Pressure'].Value) for name in self.names_pumps]
+        
+        
     def plot_stream_state(self, stream, state):
         y_name = {'P': 'Pressure /bar', 'T': 'Temperature /°C', 'dot_n': 'Molar flow rate /(kmol/h)'}
         factor_name = {'P': 100, 'T': 1, 'dot_n': 1}
@@ -224,11 +232,18 @@ class Simulator:
         ax = fig1.add_subplot(1, 1, 1)
         p1, = plot(time, [i/factor_name[state] for i in y], 'r')
         ax.set_ylabel(f"{stream} {y_name[state]}", fontsize=12)  # Adicionando o nome da stream aqui
-        ax.set_title(stream)  # Corrigido: era 'tittle' em vez de 'set_title'
+        ax.set_title(stream)  
         ax.set_xlabel('Time /h', fontsize=12)
         fig1.tight_layout()
-        fig1.show()
+
         
+                # ---- Salvamento automático ----
+        os.makedirs("figuras", exist_ok=True)  # cria pasta se não existir
+        filename = f"figuras/{stream}_{state}.png"
+        fig1.savefig(filename, dpi=300, bbox_inches="tight")
+        print(f"Gráfico salvo em: {filename}")
+
+        fig1.show()
     def get_streams_PT_points_in_k(self,k):
         
         P = [self.stream_states[stream]['P'][k]/100 for stream in self.names_streams]
@@ -239,10 +254,17 @@ class Simulator:
         flow = [self.stream_states[stream]['MassFlow'][k] for stream in self.names_streams]
         return flow
     
-    def new_eta_head(self,eta_values,PressureIncrease_values):
-        [self.Pumps[self.names_pumps[i]]['Efficency'].SetValue(eta_values[i],"%") for i in range(len(self.names_pumps))]
-        [self.Pumps[self.names_pumps[i]]['Pressure'].SetValue(PressureIncrease_values[i]) for i in range(len(self.names_pumps))]
-
+    def new_eta_head(self,eta_values,PressureIncrease_values,selected_pump):
+        if selected_pump == "pump_1":
+            indices = [0]
+        elif selected_pump == "pump_2":
+            indices = [1]
+        else:  
+            indices = [0, 1]
+        
+        for i in indices:
+            self.Pumps[self.names_pumps[i]]['Efficency'].SetValue(eta_values[i], "%")
+            self.Pumps[self.names_pumps[i]]['Pressure'].SetValue(PressureIncrease_values[i],"kPa")
         
     def save_data(self,file_name,external_data_dict):
         data = {}
