@@ -130,7 +130,6 @@ m_max = 80
 
 for i,vap in enumerate(list_vap):
     compressor = CompressorClass()
-    compressor.change_parameters()
 
     compressor.change_parameters2()
     m_max = 80

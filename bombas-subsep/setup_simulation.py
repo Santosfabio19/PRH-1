@@ -244,12 +244,11 @@ class Simulator:
         p1, = plot(time, [i/factor_name[state] for i in y], 'r')
         ax.set_ylabel(f"{stream} {y_name[state]}", fontsize=12)  # Adicionando o nome da stream aqui
         ax.set_title(stream)  
-        ax.set_xlabel('Time /h', fontsize=12)
+        ax.set_xlabel('Time /min', fontsize=12)
         fig1.tight_layout()
 
         
-                # ---- Salvamento automático ----
-        os.makedirs("figuras", exist_ok=True)  # cria pasta se não existir
+
         filename = f"figuras/{stream}_{state}.png"
         fig1.savefig(filename, dpi=300, bbox_inches="tight")
         print(f"Gráfico salvo em: {filename}")
@@ -261,6 +260,8 @@ class Simulator:
         T = [self.stream_states[stream]['T'][k] for stream in self.names_streams]
         
         return [T,P]
+    
+    
     def get_stream_mflowrate(self,k):
         flow = [self.stream_states[stream]['MassFlow'][k] for stream in self.names_streams]
         return flow
@@ -274,8 +275,8 @@ class Simulator:
             indices = [0, 1]
         
         for i in indices:
-            self.Pumps[self.names_pumps[i]]['Efficency'].SetValue(eta_values[i], "%")
-            self.Pumps[self.names_pumps[i]]['Pressure'].SetValue(PressureIncrease_values[i],"kPa")
+            self.Pumps[self.names_pumps[i]]['Efficency'].SetValue(eta_values, "%")
+            self.Pumps[self.names_pumps[i]]['Pressure'].SetValue(PressureIncrease_values,"kPa")
         
     def save_data(self, file_name, external_data_dict):
         data = {

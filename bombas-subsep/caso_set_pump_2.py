@@ -19,7 +19,7 @@ from setup_simulation import *
 
 
 compressor = CompressorClass()
-compressor.change_parameters()
+compressor.change_parameters2()
 
 
 def organize_separately(list1, list2):
@@ -44,16 +44,23 @@ name_pumps = ['pump_1', 'pump_2']
 
 
 ns = [[ 70,60],
-      [ 80,60],
+      [ 70,70],
       [80,70],
       [90,70],
       [100,80],
       [100,80]] # n1 C [70,100], n2 C [60,80]
+    #ns = 
+    #[[ 90,50],
+    #[ 90,60],
+    #[ 90,70],
+    #[100,70],
+    #[100,80],
+    #[120,80]] # n1 C [70,100], n2 C [60,80]
 
 nsim = (40*60)*6
 
 unit_time = 'seconds'
-sample_time = 1
+sample_time = 10
 
 
 ########################################################################
@@ -78,17 +85,17 @@ arm_pump_1 = []
 start = time.time()
 
 
-while k <= nsim:
+while k <= nsim: # Alinhar k 
     
-    if k < 40*60:
+    if k < 10*60:
         i = 0
-    elif k < ((40*60)*2):
+    elif k < ((10*60)*2):
         i = 1
-    elif k < ((40*60)*3):
+    elif k < ((10*60)*3):
         i = 2
-    elif k < ((40*60)*4):
+    elif k < ((10*60)*4):
         i = 3
-    elif k < ((40*60)*5):
+    elif k < ((10*60)*5):
         i = 4
     else:
         i = 5
@@ -120,12 +127,14 @@ while k <= nsim:
     arm_pump_1.append(res_pump_1)
 
 
-    eta_values, pressure_values = organize_separately(arm_pump_1, arm_pump_1)
-    simu2.new_eta_head(eta_values[i],pressure_values[i],"pump_2") # pump_1 ou pump_2, ambos é um else
+    eta_values, pressure_values, head = res_pump_1
+    simu2.new_eta_head((eta_values*100),pressure_values,"pump_2")
     simu2.pumps_new_value(ns[i],"pump_1")
     simu2.simulate_n_save_streams()    
+    print(k)
     
     k += 1
+    
 
 end = time.time()
 print(end-start)

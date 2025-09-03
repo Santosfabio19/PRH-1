@@ -33,7 +33,7 @@ def organize_separately(list1, list2):
 
 
 
-file_path_unisim =  r"C:\Users\fabio\Downloads\bombas_novo_tema\model\arquivos de simulação\nwe_sub_separtion_dynamic_set_pump1.usc"
+file_path_unisim =  r"C:\Users\fabio\folder\PRH-1\PRH-1\bombas-subsep\arquivos de simulação\nwe_sub_separtion_dynamic_set_pump1.usc"
 
 name_streams = ['feed_sep','1st_heat_out','scrubber_in','pump_1_in',
                 'pump_1_out','pump_2_in','pump_2_out']
@@ -50,10 +50,10 @@ ns = [[ 70,60],
       [100,80],
       [100,80]] # n1 C [70,100], n2 C [60,80]
 
-nsim = (40*60)*6
+nsim = (1*60)*6
 
 unit_time = 'seconds'
-sample_time = 1
+sample_time = 0.05
 
 
 ########################################################################
@@ -80,15 +80,15 @@ start = time.time()
 
 while k <= nsim:
     
-    if k < 40*60:
+    if k < 1*60:
         i = 0
-    elif k < ((40*60)*2):
+    elif k < ((1*60)*2):
         i = 1
-    elif k < ((40*60)*3):
+    elif k < ((1*60)*3):
         i = 2
-    elif k < ((40*60)*4):
+    elif k < ((1*60)*4):
         i = 3
-    elif k < ((40*60)*5):
+    elif k < ((1*60)*5):
         i = 4
     else:
         i = 5
@@ -120,8 +120,8 @@ while k <= nsim:
     arm_pump_1.append(res_pump_1)
 
 
-    eta_values, pressure_values = organize_separately(arm_pump_1, arm_pump_1)
-    simu2.new_eta_head(eta_values[i],pressure_values[i],"pump_1") # pump_1 ou pump_2, ambos é um else
+    eta_values, pressure_values, head = res_pump_1
+    simu2.new_eta_head(eta_values*100,pressure_values,"pump_1") # pump_1 ou pump_2, ambos é um else
     simu2.pumps_new_value(ns[i],"pump_2")
     simu2.simulate_n_save_streams()    
     

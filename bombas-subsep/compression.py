@@ -632,7 +632,7 @@ class multi_stage_compression(compression):
         
         self.compressor.update_speed(N)
         W = self.compressor.Ah_ideal
-        
+        print(N)
         Gi = G01
         
         loss = 0
