@@ -185,10 +185,15 @@ class Simulator:
                 'T': [self.Streams[name].Temperature()],
                 'dot_n': [self.Streams[name].MolarFlow()],
                 'x': [self.rearrange(self.Streams[name].ComponentMolarFraction())],
-                'MassFlow':[(self.Streams[name].MassFlow())]
+                'MassFlow':[(self.Streams[name].MassFlow())],
                 }
         
         return dict
+    def get_pump_state(self, name):
+        dict = {'PressureIncrease':[self.Pumps[name].PressureIncrease()]
+            
+            }
+        
     
     def new_state(self,name,dict):    
         
@@ -199,25 +204,31 @@ class Simulator:
         #dict['MassFlow'].append(self.rearrange(self.Streams[name].MassFlow()))
         
     def start_streams(self):
-        
         self.stream_states = {name: self.get_state(name) for name in self.names_streams}
         
-        self.inputs_pumps = {name: [self.Pumps[name]['speed'].Value] for name in self.names_pumps}
-        self.inputs_pumps = {name: [self.Pumps[name]['Efficency'].Value] for name in self.names_pumps}
-        self.inputs_pumps = {name: [self.Pumps[name]['Pressure'].Value] for name in self.names_pumps}
-        self.inputs_valves = {name: [self.Valves[name].Value] for name in self.names_valves}
-        
-        
-        self.integrador.RunFor(self.sample_time,self.unit_time)
-        
-        for name in self.stream_states.keys():
-            self.new_state(name,self.stream_states[name])
-            
-        [self.inputs_valves[name].append(self.Valves[name].Value) for name in self.names_valves]
-        
-        [self.inputs_pumps[name].append(self.Pumps[name]['speed'].Value) for name in self.names_pumps]
-        [self.inputs_pumps[name].append(self.Pumps[name]['Efficency'].Value) for name in self.names_pumps]
-        [self.inputs_pumps[name].append(self.Pumps[name]['Pressure'].Value) for name in self.names_pumps]
+        # Inicializa dicionário de listas para cada bomba e tipo de valor
+        self.inputs_pumps = {
+            name: {
+                'speed': [],
+                'efficiency': [],
+                'pressure': []
+            }
+            for name in self.names_pumps
+        }
+    
+        # Inicializa dicionário de listas para válvulas
+        self.inputs_valves = {name: [] for name in self.names_valves}
+    
+        # Preenche o primeiro conjunto de valores
+        for name in self.names_pumps:
+            self.inputs_pumps[name]['speed'].append(self.Pumps[name]['speed'].Value)
+            self.inputs_pumps[name]['efficiency'].append(self.Pumps[name]['Efficency'].Value)
+            self.inputs_pumps[name]['pressure'].append(self.Pumps[name]['Pressure'].Value)
+    
+        for name in self.names_valves:
+            self.inputs_valves[name].append(self.Valves[name].Value)
+
+
         
         
     def plot_stream_state(self, stream, state):
@@ -266,26 +277,28 @@ class Simulator:
             self.Pumps[self.names_pumps[i]]['Efficency'].SetValue(eta_values[i], "%")
             self.Pumps[self.names_pumps[i]]['Pressure'].SetValue(PressureIncrease_values[i],"kPa")
         
-    def save_data(self,file_name,external_data_dict):
-        data = {}
-        data['streams'] = self.stream_states
-        data['pumps'] = self.inputs_pumps
-        data['valves'] = self.inputs_valves
-        for key,value in external_data_dict.items():
+    def save_data(self, file_name, external_data_dict):
+        data = {
+            'streams': self.stream_states,
+            'pumps': self.inputs_pumps,  # works with new structure
+            'valves': self.inputs_valves
+        }
+        for key, value in external_data_dict.items():
             data[key] = value
         with open(file_name, 'wb') as arquivo:
             pickle.dump(data, arquivo)
+
         
     def simulate_n_save_streams(self):
-        
-        self.integrador.RunFor(self.sample_time,self.unit_time)
-        
-        for name in self.stream_states.keys():
-            self.new_state(name,self.stream_states[name])
-            
-        [self.inputs_valves[name].append(self.Valves[name].Value) for name in self.names_valves]
-        
-        [self.inputs_pumps[name].append(self.Pumps[name]['speed'].Value) for name in self.names_pumps]
-        
-        
+        self.integrador.RunFor(self.sample_time, self.unit_time)
     
+        for name in self.names_pumps:
+            self.inputs_pumps[name]['speed'].append(self.Pumps[name]['speed'].Value)
+            self.inputs_pumps[name]['efficiency'].append(self.Pumps[name]['Efficency'].Value)
+            self.inputs_pumps[name]['pressure'].append(self.Pumps[name]['Pressure'].Value)
+    
+        for name in self.names_valves:
+            self.inputs_valves[name].append(self.Valves[name].Value)
+
+                
+            

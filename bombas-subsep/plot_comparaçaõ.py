@@ -7,8 +7,8 @@ Created on Thu Aug 28 10:09:21 2025
 
 import pickle
 import matplotlib.pyplot as plt 
-cami = r"C:\Users\fabio\Downloads\bombas_novo_tema\model\simulação sem sets.pkl"
-aa = r"C:\Users\fabio\Downloads\bombas_novo_tema\model\simulação3008.pkl"
+cami = r"C:\Users\fabio\folder\PRH-1\PRH-1\bombas-subsep\simulação sem sets.pkl"
+aa = r"C:\Users\fabio\folder\PRH-1\PRH-1\bombas-subsep\simulação3008.pkl"
 with open(aa,"rb") as (g):
     #ns = [[ 90,50],[ 90,60], [ 90,70],[100,70],[100,80],[120,80]] # n1 C [70,100], n2 C [60,80]
     simu_set_pump_1 = pickle.load(g)
@@ -44,3 +44,4 @@ def plot_comparacao(simu,simu_set_pump_1):
 
 
 
+chamar = plot_comparacao(simu,simu_set_pump_1)
